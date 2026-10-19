@@ -1,0 +1,3645 @@
+{
+  "users": [
+    {
+      "email": "saranya_artisan@test.local",
+      "password_hash": "scrypt:32768:8:1$NauY2cdJuSwI8419$a19191088138fbc4ad8104cae3d04aad47e6b335a795e458879e59d119b002cafc4bfb3771b37f0a7ec014ef11bceb6351f75ea2a77e744cd0b2652e4de99eba",
+      "role": "seller",
+      "full_name": "Saranya B",
+      "phone": "+91 98765 43210",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:27:11.904693+00:00",
+      "updated_at": "2026-10-19T05:27:12.080204+00:00",
+      "_id": {
+        "$oid": "6ad5aa30699750a53ccad071"
+      },
+      "verification_status": "pending"
+    },
+    {
+      "email": "saranya_3f8caa7d@test.local",
+      "password_hash": "scrypt:32768:8:1$lc5dMStkAZw1FPC7$9cd89bc59950657e0518d2802df1de4bc5cb7710ddd233b2e42058ecf2ddfe8faa63d9828baba031a870ba07b1c6b06b207a679ce1bff61438de1c009f013325",
+      "role": "seller",
+      "full_name": "Saranya B",
+      "phone": "+91 98765 43210",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:29:43.641336+00:00",
+      "updated_at": "2026-10-19T05:29:43.963014+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f7891"
+      },
+      "verification_status": "verified_producer",
+      "is_verified": true
+    },
+    {
+      "email": "intruder_seller@test.local",
+      "password_hash": "scrypt:32768:8:1$lc18jIwVaOXXoR6y$3114a8ff4761702539e9a21cfac8c666d72e5aaeee5b04e905dd14b0950bdf848a2b468ec9bc89e62ad8a012db63677f23c2e1d6c66e638eac2f4c79b7777020",
+      "role": "seller",
+      "full_name": "Intruder Seller",
+      "phone": "",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:29:43.837936+00:00",
+      "updated_at": "2026-10-19T05:29:43.837936+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f789f"
+      }
+    },
+    {
+      "email": "artisan_391837e1@example.com",
+      "password_hash": "scrypt:32768:8:1$PsMkuNNJwn0TnqOE$646c41594719bf050bf5e709e4aface38e844d99548942f9699bd6ee68f1edb14e085d93834a2549406adc6751a80e80d2b741897e39d6ec31ce5fecc5cfe78d",
+      "role": "seller",
+      "full_name": "Meenakshi Sundaram",
+      "phone": "+91 94433 11223",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:30:17.247746+00:00",
+      "updated_at": "2026-10-19T05:30:17.247746+00:00",
+      "_id": {
+        "$oid": "6ad5aae9708af45ea5465114"
+      }
+    },
+    {
+      "email": "artisan_177ea333@example.com",
+      "password_hash": "scrypt:32768:8:1$vfoKUJG9NB4qUz3g$7330e37f3682f8267292a5dd715ad659900b3bb27c76a600cd25b79d0d055c58dc065726901ac156116f3ce6af578cbacb8b2e936fe53fcb04e98ece393501c5",
+      "role": "seller",
+      "full_name": "Meenakshi Sundaram",
+      "phone": "+91 94433 11223",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:31:21.145191+00:00",
+      "updated_at": "2026-10-19T05:31:21.458804+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8c2"
+      },
+      "verification_status": "verified_producer",
+      "is_verified": true
+    },
+    {
+      "email": "buyer_7c875c34@example.com",
+      "password_hash": "scrypt:32768:8:1$qLj7m8u6uikjYY7t$abd7cd256533bf95f8af78a231c5f4badaddb8b9deb20a356dd740e3c7a8752b9d1a3e2025e0d83c930a694dbd7854db4c1eebe0f2c0d9a9f65f35a61604d736",
+      "role": "buyer",
+      "full_name": "Unauthorized Buyer",
+      "phone": "",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:31:21.317253+00:00",
+      "updated_at": "2026-10-19T05:31:21.317253+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8cd"
+      }
+    },
+    {
+      "email": "artisan_0332812b@example.com",
+      "password_hash": "scrypt:32768:8:1$FxBPm7IFD6H6xm7z$e1b097203b074fc9ccc07adf2b6a02fe8222a7b3afc814d5a0a0b351cc9a15252a405c4347de2928c167cd343813cd0bc9594301a30cd87699d71eb278c65eda",
+      "role": "seller",
+      "full_name": "Meenakshi Sundaram",
+      "phone": "+91 94433 11223",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:31:45.788277+00:00",
+      "updated_at": "2026-10-19T05:31:46.089939+00:00",
+      "_id": {
+        "$oid": "6ad5ab418bf07dccef5332f4"
+      },
+      "verification_status": "verified_producer",
+      "is_verified": true
+    },
+    {
+      "email": "buyer_63218eb9@example.com",
+      "password_hash": "scrypt:32768:8:1$yeosUAyXH2Uw5FJl$a51e506bd189df004d777d9224edbccfa46522faccfc87fc7a4a934283d5ec24816d43ff97e79e699788abd088925f75c9e2b1ae1dc2e021e78fed0d64512825",
+      "role": "buyer",
+      "full_name": "Unauthorized Buyer",
+      "phone": "",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:31:45.952111+00:00",
+      "updated_at": "2026-10-19T05:31:45.952111+00:00",
+      "_id": {
+        "$oid": "6ad5ab428bf07dccef5332ff"
+      }
+    },
+    {
+      "email": "admin@marketlink.local",
+      "password_hash": "scrypt:32768:8:1$KQIpcjTfHHfLNSZk$ca01d2784d542c12cc0d48bd2689da66d982dd431112e4a2d2a0a2711caf4547235f4713f6fb99ad0e745e4e2462f02f9d1ea36c26bfee3120f68906d025d918",
+      "role": "admin",
+      "full_name": "Platform Administrator",
+      "phone": "9876543210",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab50756d623531c39cf8"
+      }
+    },
+    {
+      "email": "seller@marketlink.local",
+      "password_hash": "scrypt:32768:8:1$dbqVqTj606uLZHCW$b723930754415c5dd91a8423a00c9359bf2b7d26895b2a04dfdbc8c16ae1e1184234142f648fa53bca572f6a67e46db60854fe463b305d0dd411677b357e2b64",
+      "role": "seller",
+      "full_name": "Ramanathan Natarajan",
+      "phone": "9842156789",
+      "status": "active",
+      "preferred_language": "ta",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:06.246591+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39cf9"
+      },
+      "verification_status": "verified_producer",
+      "is_verified": true
+    },
+    {
+      "email": "buyer@marketlink.local",
+      "password_hash": "scrypt:32768:8:1$qoh4odxR4XfUfqKb$cd673467b8e1ff4b104c469a982858c519e5c75039fe44ee3668e342123d1a5b168055cf37b1dfa42f6c680fc98326fbefa418969592419df6dcfe7d9cb7b9c8",
+      "role": "buyer",
+      "full_name": "Anita Venkatesh",
+      "phone": "9884012345",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39cfc"
+      }
+    },
+    {
+      "email": "kaveri_shg@marketlink.local",
+      "password_hash": "scrypt:32768:8:1$csNSV5g2WKu9KzDE$a63028c891c11391b8109cfa24874c51e7a313e8ad99520208b9a83bd93d6d7ef9006c00420d01b79603d02dcbc4fc12c8393b2a160d6cf9acd43a89b5864488",
+      "role": "seller",
+      "full_name": "Kaveri Women Artisan SHG",
+      "phone": "9789123456",
+      "status": "active",
+      "preferred_language": "ta",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39cfe"
+      },
+      "suspension_reason": null,
+      "status_updated_at": "2026-10-19T05:32:06.256182+00:00"
+    },
+    {
+      "email": "manamadurai@marketlink.local",
+      "password_hash": "scrypt:32768:8:1$FnfMexQzA1bqwnDK$1c811fa596e28f99743cbc5bb895a24e6a5a853feb68d375d829a4896b5e5a058c4158f6e420ae3e0268a579f67fc409a9ee4fc1afb898b6cc8e82a3c0bb1d65",
+      "role": "seller",
+      "full_name": "Manamadurai Terracotta Society",
+      "phone": "9443219876",
+      "status": "active",
+      "preferred_language": "ta",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d01"
+      }
+    },
+    {
+      "email": "other_artisan@marketlink.local",
+      "full_name": "Ramanathan Master Weaver",
+      "role": "seller",
+      "status": "active",
+      "created_at": "2026-10-19T05:32:02.319614+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d30"
+      }
+    },
+    {
+      "email": "artisan_6caec71d@example.com",
+      "password_hash": "scrypt:32768:8:1$fMNArBkjpySUVdiG$f7071cbe3484712f4fcdbdad6b30b6c81a2b8b7eb03cdd387b98b64bcc532f49bd547828301bc96d42f289fbc1640be5b17d36ccdc532f4a34803f96180b539e",
+      "role": "seller",
+      "full_name": "Meenakshi Sundaram",
+      "phone": "+91 94433 11223",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:32:06.259708+00:00",
+      "updated_at": "2026-10-19T05:32:06.646294+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d54"
+      },
+      "verification_status": "verified_producer",
+      "is_verified": true
+    },
+    {
+      "email": "buyer_f9f62fef@example.com",
+      "password_hash": "scrypt:32768:8:1$UmRA0rXZnlEsWUfM$463dcd471e2339b3b4c70c553118d58ebbb16d4f607966619d4d36baf2d09171749a3feda0825f514b5bd9e7de1cf34b3753f799d1e827adf39cec41e3759384",
+      "role": "buyer",
+      "full_name": "Unauthorized Buyer",
+      "phone": "",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:32:06.479835+00:00",
+      "updated_at": "2026-10-19T05:32:06.479835+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d5f"
+      }
+    },
+    {
+      "email": "saranya_c1a34632@test.local",
+      "password_hash": "scrypt:32768:8:1$X3dF1M6u3GL63WeM$dd87f13d26557789f626264d96de132340b6dc14c9651a5f893e7692eb6d0a2c801aacba724c139468caf1a5d789de147b63fb26329dfccce6720d21b5f71c41",
+      "role": "seller",
+      "full_name": "Saranya B",
+      "phone": "+91 98765 43210",
+      "status": "active",
+      "preferred_language": "en",
+      "created_at": "2026-10-19T05:32:06.657557+00:00",
+      "updated_at": "2026-10-19T05:32:06.817000+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d68"
+      },
+      "verification_status": "pending"
+    }
+  ],
+  "seller_profiles": [
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "organization_name": "Ramanathan Natarajan",
+      "seller_type": "producer_group",
+      "craft_category": "Handloom & Textiles",
+      "craft_description": "water jug and pottery items",
+      "address": "maraimalai magar",
+      "district": "madurai",
+      "state": "Tamil Nadu",
+      "pincode": "600002",
+      "artisan_id_number": "TN-THJ-ART-8821",
+      "annual_production_capacity": 500,
+      "workshop_details": "water jug and pottery items",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T06:04:19.016609+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39cfa"
+      },
+      "production_method": "Handcrafted",
+      "materials_used": "Natural materials",
+      "years_of_experience": 5
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfe",
+      "organization_name": "Kaveri Women Jute & Natural Fiber Federation",
+      "seller_type": "self_help_group",
+      "craft_category": "Jute & Natural Fiber Crafts",
+      "craft_description": "Rural women self-help collective crafting eco-friendly jute bags, palm leaf containers, and decorative mats.",
+      "address": "Rural Livelihood Center, Main Road",
+      "district": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "625001",
+      "artisan_id_number": "TN-MDU-SHG-4412",
+      "annual_production_capacity": 6000,
+      "workshop_details": "40 artisan women members with pedal-operated sewing machines and natural fiber dyeing units.",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39cff"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39d01",
+      "organization_name": "Manamadurai GI-Tagged Pottery Cooperative",
+      "seller_type": "cooperative",
+      "craft_category": "Pottery & Terracotta",
+      "craft_description": "Famed Manamadurai clay pots and ornamental terracotta handicrafts crafted from Vaigai riverbed clay.",
+      "address": "Kambar Street, Potter Colony",
+      "district": "Sivagangai",
+      "state": "Tamil Nadu",
+      "pincode": "630606",
+      "artisan_id_number": "TN-SVG-GI-0192",
+      "annual_production_capacity": 12000,
+      "workshop_details": "Cooperative wood-fired kilns and traditional potter wheels.",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d02"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "organization_name": "Meenakshi Sundaram",
+      "seller_type": "individual_producer",
+      "craft_category": "Clay Pottery & Terracotta",
+      "craft_description": "Expanded solar-powered rural pottery studio with traditional kiln.",
+      "address": "",
+      "district": "Madurai",
+      "state": "Tamil Nadu",
+      "pincode": "",
+      "artisan_id_number": "",
+      "annual_production_capacity": 500,
+      "workshop_details": "Expanded solar-powered rural pottery studio with traditional kiln.",
+      "created_at": "2026-10-19T05:32:06.259708+00:00",
+      "updated_at": "2026-10-19T05:32:06.635339+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d55"
+      },
+      "production_method": "Wheel-thrown & Sun-dried",
+      "materials_used": "Natural Riverbed Clay, Terracotta Slip, Organic Dyes",
+      "years_of_experience": 5
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d68",
+      "organization_name": "Saranya B",
+      "seller_type": "individual_producer",
+      "craft_category": "Textiles & Handlooms",
+      "craft_description": "Family-run handloom weaving unit with 3 traditional pit looms.",
+      "address": "",
+      "district": "Kanchipuram",
+      "state": "Tamil Nadu",
+      "pincode": "",
+      "artisan_id_number": "",
+      "annual_production_capacity": 500,
+      "workshop_details": "Family-run handloom weaving unit with 3 traditional pit looms.",
+      "created_at": "2026-10-19T05:32:06.657557+00:00",
+      "updated_at": "2026-10-19T05:32:06.817000+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d69"
+      },
+      "production_method": "Handcrafted",
+      "materials_used": "",
+      "years_of_experience": 5
+    }
+  ],
+  "buyer_profiles": [
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "buyer_type": "wholesaler",
+      "business_name": "Heritage Crafts & Eco Living Boutique",
+      "gstin": "33AABCH1234F1ZX",
+      "address": "12 TTK Road, Alwarpet",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600018",
+      "intended_categories": [
+        "Handloom & Textiles",
+        "Pottery & Terracotta",
+        "Jute & Natural Fiber Crafts"
+      ],
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39cfd"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d5f",
+      "buyer_type": "business",
+      "business_name": "Unauthorized Buyer",
+      "gstin": "",
+      "address": "",
+      "city": "",
+      "state": "Tamil Nadu",
+      "pincode": "",
+      "intended_categories": [],
+      "created_at": "2026-10-19T05:32:06.479835+00:00",
+      "updated_at": "2026-10-19T05:32:06.479835+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d60"
+      }
+    }
+  ],
+  "seller_verifications": [
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "verification_status": "verified_producer",
+      "identity_verified": true,
+      "producer_evidence_reviewed": true,
+      "decision_history": [
+        {
+          "reviewer_id": "6ad5ab50756d623531c39cf8",
+          "reviewer_email": "admin@marketlink.local",
+          "decision": "verified_producer",
+          "reason": "Artisan registry card verified, workshop pitlooms inspected, and sample fabric passed quality standards.",
+          "previous_status": "pending",
+          "new_status": "verified_producer",
+          "timestamp": "2026-10-19T05:32:00.790491+00:00"
+        },
+        {
+          "reviewer_id": "6ad5ab50756d623531c39cf8",
+          "reviewer_email": "admin@marketlink.local",
+          "decision": "verified_producer",
+          "reason": "Workshop physical photos and pitloom setup verified by field coordinator.",
+          "previous_status": "verified_producer",
+          "new_status": "verified_producer",
+          "timestamp": "2026-10-19T05:32:06.246591+00:00"
+        }
+      ],
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T06:04:19.016609+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39cfb"
+      },
+      "reviewed_at": "2026-10-19T05:32:06.246591+00:00",
+      "rejection_reason": "",
+      "current_step": 2,
+      "artisan_profile": {
+        "full_name": "Ramanathan Natarajan",
+        "phone": "9842156789",
+        "email": "seller@marketlink.local",
+        "address": "maraimalai magar",
+        "district": "madurai",
+        "state": "Tamil Nadu",
+        "pincode": "600002",
+        "craft_category": "Handloom & Textiles",
+        "production_method": "Handcrafted",
+        "materials_used": "Natural materials",
+        "years_of_experience": 5,
+        "workshop_details": "water jug and pottery items",
+        "seller_type": "producer_group",
+        "annual_production_capacity": 500
+      },
+      "submission_notes": ""
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfe",
+      "verification_status": "verified_group",
+      "identity_verified": true,
+      "producer_evidence_reviewed": true,
+      "decision_history": [
+        {
+          "reviewer_id": "6ad5ab50756d623531c39cf8",
+          "reviewer_email": "admin@marketlink.local",
+          "decision": "verified_group",
+          "reason": "District Rural Development Agency (DRDA) SHG registration verified and cooperative resolution reviewed.",
+          "previous_status": "pending",
+          "new_status": "verified_group",
+          "timestamp": "2026-10-19T05:32:00.790491+00:00"
+        }
+      ],
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d00"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39d01",
+      "verification_status": "verified_producer",
+      "identity_verified": true,
+      "producer_evidence_reviewed": true,
+      "decision_history": [
+        {
+          "reviewer_id": "6ad5ab50756d623531c39cf8",
+          "reviewer_email": "admin@marketlink.local",
+          "decision": "verified_producer",
+          "reason": "Geographical Indication (GI) artisan certificate confirmed.",
+          "previous_status": "pending",
+          "new_status": "verified_producer",
+          "timestamp": "2026-10-19T05:32:00.790491+00:00"
+        }
+      ],
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d03"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "verification_status": "verified_producer",
+      "identity_verified": true,
+      "producer_evidence_reviewed": true,
+      "decision_history": [
+        {
+          "reviewer_id": "6ad5ab50756d623531c39cf8",
+          "reviewer_email": "admin@marketlink.local",
+          "decision": "verified_producer",
+          "reason": "Authentic rural clay artisan verified.",
+          "previous_status": "pending",
+          "new_status": "verified_producer",
+          "timestamp": "2026-10-19T05:32:06.646294+00:00"
+        }
+      ],
+      "created_at": "2026-10-19T05:32:06.259708+00:00",
+      "updated_at": "2026-10-19T05:32:06.646294+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d56"
+      },
+      "current_step": 4,
+      "artisan_profile": {
+        "craft_category": "Clay Pottery & Terracotta",
+        "district": "Madurai",
+        "full_name": "Meenakshi Sundaram",
+        "materials_used": "Natural Riverbed Clay, Terracotta Slip, Organic Dyes",
+        "phone": "+91 94433 11223",
+        "production_method": "Wheel-thrown & Sun-dried",
+        "state": "Tamil Nadu",
+        "workshop_details": "Expanded solar-powered rural pottery studio with traditional kiln.",
+        "years_experience": 19
+      },
+      "submission_notes": "Completed dossier ready for review.",
+      "submitted_at": "2026-10-19T05:32:06.635339+00:00",
+      "rejection_reason": "",
+      "reviewed_at": "2026-10-19T05:32:06.646294+00:00"
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d68",
+      "verification_status": "pending",
+      "identity_verified": false,
+      "producer_evidence_reviewed": false,
+      "decision_history": [],
+      "created_at": "2026-10-19T05:32:06.657557+00:00",
+      "updated_at": "2026-10-19T05:32:06.817000+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d6a"
+      },
+      "current_step": 4,
+      "artisan_profile": {
+        "craft_category": "Textiles & Handlooms",
+        "district": "Kanchipuram",
+        "full_name": "Saranya B",
+        "phone": "+91 98765 43210",
+        "state": "Tamil Nadu",
+        "workshop_details": "Family-run handloom weaving unit with 3 traditional pit looms.",
+        "years_experience": 12
+      },
+      "submission_notes": "Please review my artisan weaving dossier.",
+      "submitted_at": "2026-10-19T05:32:06.817000+00:00",
+      "rejection_reason": ""
+    }
+  ],
+  "verification_evidence": [
+    {
+      "user_id": "6ad5aa30699750a53ccad071",
+      "evidence_type": "artisan_card",
+      "description": "",
+      "original_filename": "weaver_card.pdf",
+      "file_name": "evid_doc_28e49168886d.pdf",
+      "file_size": 42,
+      "is_video": false,
+      "is_private": true,
+      "created_at": "2026-10-19T05:27:12.062566+00:00",
+      "_id": {
+        "$oid": "6ad5aa30699750a53ccad079"
+      }
+    },
+    {
+      "user_id": "6ad5aa30699750a53ccad071",
+      "evidence_type": "craft_video",
+      "description": "",
+      "original_filename": "pitloom_craft.webm",
+      "file_name": "evid_vid_9d181ceedeb1.webm",
+      "file_size": 47,
+      "is_video": true,
+      "is_private": true,
+      "created_at": "2026-10-19T05:27:12.065651+00:00",
+      "_id": {
+        "$oid": "6ad5aa30699750a53ccad07b"
+      }
+    },
+    {
+      "user_id": "6ad5aac73e5e08540f0f7891",
+      "evidence_type": "artisan_card",
+      "description": "",
+      "original_filename": "weaver_card.pdf",
+      "file_name": "evid_doc_77344f0e82fe.pdf",
+      "file_size": 42,
+      "is_video": false,
+      "is_private": true,
+      "created_at": "2026-10-19T05:29:43.821726+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f7899"
+      }
+    },
+    {
+      "user_id": "6ad5aac73e5e08540f0f7891",
+      "evidence_type": "craft_video",
+      "description": "",
+      "original_filename": "pitloom_craft.webm",
+      "file_name": "evid_vid_7bb9c463b282.webm",
+      "file_size": 47,
+      "is_video": true,
+      "is_private": true,
+      "created_at": "2026-10-19T05:29:43.825277+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f789b"
+      }
+    },
+    {
+      "user_id": "6ad5ab2912be684d6749d8c2",
+      "evidence_type": "craft_video",
+      "description": "",
+      "original_filename": "wheel_pottery.webm",
+      "file_name": "evid_vid_b0cae5f3bf97.webm",
+      "file_size": 43,
+      "is_video": true,
+      "is_private": true,
+      "created_at": "2026-10-19T05:31:21.306494+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8c8"
+      }
+    },
+    {
+      "user_id": "6ad5ab2912be684d6749d8c2",
+      "evidence_type": "registration_cert",
+      "description": "",
+      "original_filename": "updated_registry.pdf",
+      "file_name": "evid_doc_05fa1e536e88.pdf",
+      "file_size": 44,
+      "is_video": false,
+      "is_private": true,
+      "created_at": "2026-10-19T05:31:21.316012+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8cb"
+      }
+    },
+    {
+      "user_id": "6ad5ab418bf07dccef5332f4",
+      "evidence_type": "craft_video",
+      "description": "",
+      "original_filename": "wheel_pottery.webm",
+      "file_name": "evid_vid_464739261891.webm",
+      "file_size": 43,
+      "is_video": true,
+      "is_private": true,
+      "created_at": "2026-10-19T05:31:45.940232+00:00",
+      "_id": {
+        "$oid": "6ad5ab418bf07dccef5332fa"
+      }
+    },
+    {
+      "user_id": "6ad5ab418bf07dccef5332f4",
+      "evidence_type": "registration_cert",
+      "description": "",
+      "original_filename": "updated_registry.pdf",
+      "file_name": "evid_doc_ec63c1883289.pdf",
+      "file_size": 44,
+      "is_video": false,
+      "is_private": true,
+      "created_at": "2026-10-19T05:31:45.951090+00:00",
+      "_id": {
+        "$oid": "6ad5ab418bf07dccef5332fd"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "evidence_type": "craft_video",
+      "description": "",
+      "original_filename": "wheel_pottery.webm",
+      "file_name": "evid_vid_bc5a3391e6e5.webm",
+      "file_size": 43,
+      "is_video": true,
+      "is_private": true,
+      "created_at": "2026-10-19T05:32:06.466266+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d5a"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "evidence_type": "registration_cert",
+      "description": "",
+      "original_filename": "updated_registry.pdf",
+      "file_name": "evid_doc_13bb48eef840.pdf",
+      "file_size": 44,
+      "is_video": false,
+      "is_private": true,
+      "created_at": "2026-10-19T05:32:06.478836+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d5d"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d68",
+      "evidence_type": "artisan_card",
+      "description": "",
+      "original_filename": "weaver_card.pdf",
+      "file_name": "evid_doc_05345a046841.pdf",
+      "file_size": 42,
+      "is_video": false,
+      "is_private": true,
+      "created_at": "2026-10-19T05:32:06.802489+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d70"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d68",
+      "evidence_type": "craft_video",
+      "description": "",
+      "original_filename": "pitloom_craft.webm",
+      "file_name": "evid_vid_aca5dbd192d0.webm",
+      "file_size": 47,
+      "is_video": true,
+      "is_private": true,
+      "created_at": "2026-10-19T05:32:06.804868+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d72"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "evidence_type": "identity_proof",
+      "description": "",
+      "original_filename": "B.Saranya-Resume-GitHub-Updated (1).pdf",
+      "file_name": "evid_doc_dd1dbe6a2bcd.pdf",
+      "file_size": 378878,
+      "is_video": false,
+      "is_private": true,
+      "created_at": "2026-10-19T06:04:15.532322+00:00",
+      "_id": {
+        "$oid": "6ad5b2df82d0484270e6aced"
+      }
+    }
+  ],
+  "products": [
+    {
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "title": "Thanjavur Pure Cotton Handloom Saree",
+      "category": "Handloom & Textiles",
+      "description": "Exquisite hand-woven pure cotton saree featuring traditional geometric temple border (korvai technique). Dyed using certified AZO-free skin-friendly natural colors.",
+      "materials": "100% Combed Cotton, Natural Vegetable Dye",
+      "dimensions": "6.2 meters with blouse piece",
+      "production_method": "Traditional Frame Loom",
+      "price_per_unit": 650.0,
+      "stock_quantity": 50,
+      "allocated_stock": 0,
+      "moq": 10,
+      "monthly_capacity": 250,
+      "lead_time_days": 12,
+      "images": [
+        "/api/products/images/handloom_saree_01.jpg"
+      ],
+      "primary_image_hash": "806a7a95856e7ad5",
+      "is_published": true,
+      "is_archived": false,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:02.313312+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d04"
+      }
+    },
+    {
+      "seller_id": "6ad5ab51756d623531c39cfe",
+      "title": "Eco-Friendly Braided Jute Conference & Gift Bag",
+      "category": "Jute & Natural Fiber Crafts",
+      "description": "Sturdy handmade jute tote bag with reinforced cotton webbing handles. Ideal for wholesale corporate gifting, retail branding, and eco-friendly packaging.",
+      "materials": "100% Golden Jute, Cotton Twill Lining",
+      "dimensions": "14 x 12 x 5 inches",
+      "production_method": "Hand-stitched & Loom-woven",
+      "price_per_unit": 135.0,
+      "stock_quantity": 450,
+      "allocated_stock": 0,
+      "moq": 50,
+      "monthly_capacity": 1500,
+      "lead_time_days": 14,
+      "images": [
+        "/api/products/images/jute_gift_bag_02.jpg"
+      ],
+      "primary_image_hash": "807e7a80856f7ad5",
+      "is_published": true,
+      "is_archived": false,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d06"
+      }
+    },
+    {
+      "seller_id": "6ad5ab51756d623531c39d01",
+      "title": "Natural Clay Alkaline Water Pot with Lid",
+      "category": "Pottery & Terracotta",
+      "description": "Hand-thrown porous terracotta clay water pitcher tested for natural cooling properties. Fired in traditional biomass wood kilns.",
+      "materials": "Natural Riverbed Clay, Red Ochre Finish",
+      "dimensions": "Capacity: 3.5 Liters, Height: 11 inches",
+      "production_method": "Wheel-thrown & Hand-beaten",
+      "price_per_unit": 220.0,
+      "stock_quantity": 300,
+      "allocated_stock": 0,
+      "moq": 25,
+      "monthly_capacity": 1000,
+      "lead_time_days": 10,
+      "images": [
+        "/api/products/images/terracotta_pot_03.jpg"
+      ],
+      "primary_image_hash": "807a7a84856f7ad5",
+      "is_published": true,
+      "is_archived": false,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d08"
+      }
+    },
+    {
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "title": "Drawstring Natural Jute Favor Pouch",
+      "category": "Jute & Natural Fiber Crafts",
+      "description": "Small artisan jute drawstring pouches suitable for jewelry, dry fruits packaging, and artisanal soap hampers.",
+      "materials": "Treated Soft Jute, Cotton Cord",
+      "dimensions": "8 x 6 inches",
+      "production_method": "Handloom Fabric & Hand-stitched",
+      "price_per_unit": 45.0,
+      "stock_quantity": 600,
+      "allocated_stock": 0,
+      "moq": 100,
+      "monthly_capacity": 2000,
+      "lead_time_days": 7,
+      "images": [
+        "/api/products/images/jute_pouch_04.jpg"
+      ],
+      "primary_image_hash": "807a7a85856e7ad5",
+      "is_published": true,
+      "is_archived": false,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d0a"
+      }
+    },
+    {
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "title": "Kanchipuram Silk Stole with Zari Border",
+      "title_ta": "",
+      "category": "Handloom & Textiles",
+      "description": "Artisan woven pure silk stole with subtle gold zari borders.",
+      "description_ta": "",
+      "materials": "Pure Mulberry Silk, Silver-plated Zari",
+      "dimensions": "",
+      "production_method": "Handcrafted",
+      "price_per_unit": 1150.0,
+      "unit": "piece",
+      "stock_quantity": 45,
+      "allocated_stock": 0,
+      "moq": 5,
+      "monthly_capacity": 150,
+      "lead_time_days": 15,
+      "images": [],
+      "primary_image_hash": "",
+      "is_published": false,
+      "is_archived": true,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:02.297743+00:00",
+      "updated_at": "2026-10-19T05:32:02.300871+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d13"
+      }
+    },
+    {
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "title": "Mastercrafted Madurai Brass Diya Lamp (Temple Grade)",
+      "title_ta": "",
+      "category": "Metal & Bell Metal Crafts",
+      "description": "Hand-cast traditional solid brass diya for pooja and decor.",
+      "description_ta": "",
+      "materials": "Solid Brass",
+      "dimensions": "8 inches height, 500g",
+      "production_method": "Handcrafted",
+      "price_per_unit": 950.0,
+      "unit": "piece",
+      "stock_quantity": 40,
+      "allocated_stock": 0,
+      "moq": 3,
+      "monthly_capacity": 100,
+      "lead_time_days": 10,
+      "images": [],
+      "primary_image_hash": "",
+      "is_published": false,
+      "is_archived": true,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:02.321833+00:00",
+      "updated_at": "2026-10-19T05:32:02.325277+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d31"
+      }
+    },
+    {
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "title": "Toda Hand-Embroidered Shawl",
+      "title_ta": "",
+      "category": "Handloom & Textiles",
+      "description": "Distinctive red and black geometric embroidery on unbleached cotton.",
+      "description_ta": "",
+      "materials": "Cotton, Wool",
+      "dimensions": "",
+      "production_method": "Handcrafted",
+      "price_per_unit": 2200.0,
+      "unit": "piece",
+      "stock_quantity": 13,
+      "allocated_stock": 2,
+      "moq": 1,
+      "monthly_capacity": 100,
+      "lead_time_days": 7,
+      "images": [],
+      "primary_image_hash": "",
+      "is_published": false,
+      "is_archived": true,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:02.328301+00:00",
+      "updated_at": "2026-10-19T05:32:02.331390+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d37"
+      }
+    },
+    {
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "title": "Handcrafted Terracotta Water Jug (Batch Inconsistency Case)",
+      "title_ta": "",
+      "category": "Household Goods, Water Jugs & Pitchers",
+      "description": "Natural cooling earthenware water pot.",
+      "description_ta": "",
+      "materials": "Terracotta Clay",
+      "dimensions": "",
+      "production_method": "Handcrafted",
+      "price_per_unit": 350.0,
+      "unit": "piece",
+      "stock_quantity": 10,
+      "allocated_stock": 50,
+      "moq": 50,
+      "monthly_capacity": 100,
+      "lead_time_days": 14,
+      "images": [],
+      "primary_image_hash": "",
+      "is_published": false,
+      "is_archived": true,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:02.333284+00:00",
+      "updated_at": "2026-10-19T05:32:02.339029+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d3e"
+      }
+    },
+    {
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "title": "Rare Sandalwood Hand Fan",
+      "title_ta": "",
+      "category": "Woodwork & Carving",
+      "description": "Finely carved pure aromatic sandalwood folding fan.",
+      "description_ta": "",
+      "materials": "Sandalwood",
+      "dimensions": "",
+      "production_method": "Handcrafted",
+      "price_per_unit": 1500.0,
+      "unit": "piece",
+      "stock_quantity": 1,
+      "allocated_stock": 4,
+      "moq": 1,
+      "monthly_capacity": 100,
+      "lead_time_days": 5,
+      "images": [],
+      "primary_image_hash": "",
+      "is_published": false,
+      "is_archived": true,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:02.342038+00:00",
+      "updated_at": "2026-10-19T05:32:02.345376+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d46"
+      }
+    },
+    {
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "title": "Artisan Terracotta Water Jug",
+      "title_ta": "",
+      "category": "Household Goods, Water Jugs & Pitchers",
+      "description": "Handcrafted natural clay water jug that cools water naturally and stays durable.",
+      "description_ta": "",
+      "materials": "Natural Clay, Terracotta",
+      "dimensions": "",
+      "production_method": "Handcrafted",
+      "price_per_unit": 450.0,
+      "unit": "piece",
+      "stock_quantity": 30,
+      "allocated_stock": 0,
+      "moq": 2,
+      "monthly_capacity": 100,
+      "lead_time_days": 5,
+      "images": [],
+      "primary_image_hash": "",
+      "is_published": false,
+      "is_archived": true,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:03.631071+00:00",
+      "updated_at": "2026-10-19T05:32:05.241397+00:00",
+      "_id": {
+        "$oid": "6ad5ab53756d623531c39d4d"
+      }
+    },
+    {
+      "seller_id": "6ad5ab56756d623531c39d68",
+      "title": "Authentic Silk Handloom Saree",
+      "title_ta": "",
+      "category": "Textiles & Handlooms",
+      "description": "Pure mulberry silk saree with zari borders",
+      "description_ta": "",
+      "materials": "",
+      "dimensions": "",
+      "production_method": "Handcrafted",
+      "price_per_unit": 4500.0,
+      "unit": "piece",
+      "stock_quantity": 0,
+      "allocated_stock": 0,
+      "moq": 1,
+      "monthly_capacity": 100,
+      "lead_time_days": 14,
+      "images": [],
+      "primary_image_hash": "",
+      "is_published": true,
+      "is_archived": false,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:06.786565+00:00",
+      "updated_at": "2026-10-19T05:32:06.786565+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d6c"
+      }
+    },
+    {
+      "seller_id": "6ad5ab56756d623531c39d68",
+      "title": "Draft Silk Saree Listing",
+      "title_ta": "",
+      "category": "Textiles & Handlooms",
+      "description": "Draft listing under preparation",
+      "description_ta": "",
+      "materials": "",
+      "dimensions": "",
+      "production_method": "Handcrafted",
+      "price_per_unit": 4500.0,
+      "unit": "piece",
+      "stock_quantity": 0,
+      "allocated_stock": 0,
+      "moq": 1,
+      "monthly_capacity": 100,
+      "lead_time_days": 14,
+      "images": [],
+      "primary_image_hash": "",
+      "is_published": false,
+      "is_archived": false,
+      "ai_generated": false,
+      "created_at": "2026-10-19T05:32:06.786565+00:00",
+      "updated_at": "2026-10-19T05:32:06.786565+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d6e"
+      }
+    }
+  ],
+  "product_images": [],
+  "image_hashes": [
+    {
+      "product_id": "6ad5ab51756d623531c39d04",
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "image_url": "/api/products/images/handloom_saree_01.jpg",
+      "phash": "806a7a95856e7ad5",
+      "dhash": "01c003d4d4038000",
+      "ahash": "0000007e7e000000",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d05"
+      }
+    },
+    {
+      "product_id": "6ad5ab51756d623531c39d06",
+      "seller_id": "6ad5ab51756d623531c39cfe",
+      "image_url": "/api/products/images/jute_gift_bag_02.jpg",
+      "phash": "807e7a80856f7ad5",
+      "dhash": "018003d0d4038000",
+      "ahash": "0000007e7e000000",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d07"
+      }
+    },
+    {
+      "product_id": "6ad5ab51756d623531c39d08",
+      "seller_id": "6ad5ab51756d623531c39d01",
+      "image_url": "/api/products/images/terracotta_pot_03.jpg",
+      "phash": "807a7a84856f7ad5",
+      "dhash": "01c003d4d4038000",
+      "ahash": "0000007e7e000000",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d09"
+      }
+    },
+    {
+      "product_id": "6ad5ab51756d623531c39d0a",
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "image_url": "/api/products/images/jute_pouch_04.jpg",
+      "phash": "807a7a85856e7ad5",
+      "dhash": "018003d4d4038000",
+      "ahash": "0000007e7e000000",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d0b"
+      }
+    }
+  ],
+  "duplicate_flags": [
+    {
+      "new_product_id": null,
+      "new_seller_id": "test_seller_9999",
+      "new_image_url": null,
+      "new_phash": "806a7a95856e7ad5",
+      "existing_product_id": "6ad5ab51756d623531c39d04",
+      "existing_seller_id": "6ad5ab51756d623531c39cf9",
+      "existing_image_url": "/api/products/images/handloom_saree_01.jpg",
+      "existing_phash": "806a7a95856e7ad5",
+      "hamming_distance": 0,
+      "similarity_score": 100.0,
+      "status": "pending_review",
+      "reviewer_id": null,
+      "reviewer_notes": null,
+      "created_at": "2026-10-19T05:32:02.303443+00:00",
+      "updated_at": "2026-10-19T05:32:02.303443+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d17"
+      }
+    },
+    {
+      "new_product_id": null,
+      "new_seller_id": "test_seller_9999",
+      "new_image_url": null,
+      "new_phash": "806a7a95856e7ad5",
+      "existing_product_id": "6ad5ab51756d623531c39d06",
+      "existing_seller_id": "6ad5ab51756d623531c39cfe",
+      "existing_image_url": "/api/products/images/jute_gift_bag_02.jpg",
+      "existing_phash": "807e7a80856f7ad5",
+      "hamming_distance": 6,
+      "similarity_score": 90.6,
+      "status": "pending_review",
+      "reviewer_id": null,
+      "reviewer_notes": null,
+      "created_at": "2026-10-19T05:32:02.303677+00:00",
+      "updated_at": "2026-10-19T05:32:02.303677+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d18"
+      }
+    },
+    {
+      "new_product_id": null,
+      "new_seller_id": "test_seller_9999",
+      "new_image_url": null,
+      "new_phash": "806a7a95856e7ad5",
+      "existing_product_id": "6ad5ab51756d623531c39d08",
+      "existing_seller_id": "6ad5ab51756d623531c39d01",
+      "existing_image_url": "/api/products/images/terracotta_pot_03.jpg",
+      "existing_phash": "807a7a84856f7ad5",
+      "hamming_distance": 4,
+      "similarity_score": 93.8,
+      "status": "pending_review",
+      "reviewer_id": null,
+      "reviewer_notes": null,
+      "created_at": "2026-10-19T05:32:02.303677+00:00",
+      "updated_at": "2026-10-19T05:32:02.303677+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d19"
+      }
+    },
+    {
+      "new_product_id": null,
+      "new_seller_id": "test_seller_9999",
+      "new_image_url": null,
+      "new_phash": "806a7a95856e7ad5",
+      "existing_product_id": "6ad5ab51756d623531c39d0a",
+      "existing_seller_id": "6ad5ab51756d623531c39cf9",
+      "existing_image_url": "/api/products/images/jute_pouch_04.jpg",
+      "existing_phash": "807a7a85856e7ad5",
+      "hamming_distance": 2,
+      "similarity_score": 96.9,
+      "status": "pending_review",
+      "reviewer_id": null,
+      "reviewer_notes": null,
+      "created_at": "2026-10-19T05:32:02.304183+00:00",
+      "updated_at": "2026-10-19T05:32:02.304183+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d1a"
+      }
+    }
+  ],
+  "buyer_requirements": [
+    {
+      "buyer_id": "6ad5ab51756d623531c39cfc",
+      "title": "Wholesale Order for 500 Handmade Jute Gift Bags",
+      "category": "Jute & Natural Fiber Crafts",
+      "description": "Looking for 500 units of high-grade natural jute gift bags for corporate Diwali and New Year kits. Deliverable to Chennai within 20 days. Maximum budget \u20b9150 per bag.",
+      "quantity": 500,
+      "target_unit_price": 140.0,
+      "max_budget": 75000.0,
+      "destination_city": "Chennai",
+      "destination_state": "Tamil Nadu",
+      "delivery_deadline": "2026-11-20",
+      "max_lead_time_days": 20,
+      "quality_specifications": "Double-stitched seams, clean hemmed edges, biodegradable drawstring closure.",
+      "status": "open",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d0c"
+      }
+    }
+  ],
+  "quotations": [
+    {
+      "requirement_id": null,
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "buyer_id": "6ad5ab51756d623531c39cfc",
+      "product_id": "6ad5ab51756d623531c39d04",
+      "quantity": 30,
+      "unit_price": 580.0,
+      "total_price": 17400.0,
+      "currency": "INR",
+      "lead_time_days": 10,
+      "delivery_terms": "Ex-workshop with insured surface dispatch",
+      "notes": "Bulk discount offered for 30 sarees",
+      "status": "accepted",
+      "revisions": [
+        {
+          "revision_num": 1,
+          "quantity": 30,
+          "unit_price": 600.0,
+          "total_price": 18000.0,
+          "lead_time_days": 10,
+          "notes": "Bulk discount offered for 30 sarees",
+          "modified_by": "6ad5ab51756d623531c39cf9",
+          "role": "seller",
+          "timestamp": "2026-10-19T05:32:02.309362+00:00"
+        },
+        {
+          "revision_num": 2,
+          "quantity": 30,
+          "unit_price": 580.0,
+          "total_price": 17400.0,
+          "lead_time_days": 10,
+          "notes": "Counteroffer: Will confirm at \u20b9580 per unit",
+          "modified_by": "6ad5ab51756d623531c39cfc",
+          "role": "buyer",
+          "timestamp": "2026-10-19T05:32:02.310364+00:00"
+        },
+        {
+          "revision_num": 3,
+          "quantity": 30,
+          "unit_price": 580.0,
+          "total_price": 17400.0,
+          "lead_time_days": 10,
+          "notes": "Accepted \u20b9580 per unit for 30 units",
+          "modified_by": "6ad5ab51756d623531c39cf9",
+          "role": "seller",
+          "timestamp": "2026-10-19T05:32:02.311368+00:00"
+        }
+      ],
+      "created_at": "2026-10-19T05:32:02.309362+00:00",
+      "updated_at": "2026-10-19T05:32:02.313312+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d1b"
+      },
+      "status_reason": ""
+    }
+  ],
+  "orders": [
+    {
+      "order_number": "ORD-20261018-DEMO01",
+      "buyer_id": "6ad5ab51756d623531c39cfc",
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "product_id": "6ad5ab51756d623531c39d04",
+      "quantity": 25,
+      "unit_price": 650.0,
+      "total_amount": 16250.0,
+      "currency": "INR",
+      "payment_method": "manual_escrow_wire",
+      "payment_status": "escrow_released",
+      "status": "completed",
+      "delivery_address": {
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "pincode": "600018"
+      },
+      "delivery_terms": "Delivered via express road carrier",
+      "lead_time_days": 10,
+      "production_progress": [
+        {
+          "stage": "Weaving complete",
+          "percentage": 100,
+          "notes": "Passed final hand inspection",
+          "updated_at": "2026-10-19T05:32:00.790491+00:00"
+        }
+      ],
+      "shipping_details": {
+        "carrier": "TN State Logistics",
+        "tracking_number": "TN-EXP-8991"
+      },
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "updated_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d0d"
+      }
+    },
+    {
+      "order_number": "ORD-20261019-6069E1",
+      "buyer_id": "6ad5ab51756d623531c39cfc",
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "quotation_id": "6ad5ab52756d623531c39d1b",
+      "requirement_id": null,
+      "product_id": "6ad5ab51756d623531c39d04",
+      "quantity": 30,
+      "unit_price": 580.0,
+      "total_amount": 17400.0,
+      "currency": "INR",
+      "payment_method": "manual_escrow_wire",
+      "payment_status": "authorized_escrow_hold",
+      "status": "completed",
+      "delivery_address": {
+        "city": "Chennai",
+        "state": "Tamil Nadu"
+      },
+      "delivery_terms": "Ex-workshop with insured surface dispatch",
+      "lead_time_days": 10,
+      "production_progress": [
+        {
+          "stage": "Order Confirmed & Material Preparation",
+          "percentage": 10,
+          "notes": "Order confirmed. Artisan beginning raw material prep.",
+          "updated_at": "2026-10-19T05:32:02.313312+00:00"
+        },
+        {
+          "stage": "Loom Weaving 50% Completed",
+          "percentage": 50,
+          "notes": "Saree borders completed",
+          "updated_at": "2026-10-19T05:32:02.314273+00:00"
+        }
+      ],
+      "shipping_details": {
+        "carrier": "Blue Dart Surface",
+        "tracking_number": "BD-88991122",
+        "dispatch_date": "2026-10-19T05:32:02.315273+00:00",
+        "estimated_delivery": ""
+      },
+      "is_collective": false,
+      "suborder_ids": [],
+      "created_at": "2026-10-19T05:32:02.313312+00:00",
+      "updated_at": "2026-10-19T05:32:02.316933+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d24"
+      },
+      "delivered_at": "2026-10-19T05:32:02.316933+00:00"
+    },
+    {
+      "order_number": "ORD-20261019-9DA0E8",
+      "buyer_id": "6ad5ab51756d623531c39cfc",
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "product_id": "6ad5ab52756d623531c39d37",
+      "items": [
+        {
+          "product_id": "6ad5ab52756d623531c39d37",
+          "title": "Toda Hand-Embroidered Shawl",
+          "category": "Handloom & Textiles",
+          "quantity": 2,
+          "unit": "piece",
+          "unit_price": 2200.0,
+          "line_total": 4400.0,
+          "image": ""
+        }
+      ],
+      "quantity": 2,
+      "unit_price": 2200.0,
+      "total_amount": 4400.0,
+      "currency": "INR",
+      "payment_method": "cash_on_delivery",
+      "payment_status": "pending_cod",
+      "status": "confirmed",
+      "idempotency_key": "",
+      "delivery_address": {
+        "full_name": "Artisan Self",
+        "phone": "9876543210",
+        "street": "12 Weaver Colony",
+        "city": "Ooty",
+        "state": "Tamil Nadu",
+        "pincode": "643001"
+      },
+      "delivery_terms": "Direct artisan fulfillment with tracked postal / courier dispatch",
+      "lead_time_days": 7,
+      "production_progress": [
+        {
+          "stage": "Order Placed & Stock Allocated",
+          "percentage": 15,
+          "notes": "Direct marketplace purchase confirmed. Artisan preparing package for dispatch.",
+          "updated_at": "2026-10-19T05:32:02.329283+00:00"
+        }
+      ],
+      "shipping_details": {
+        "carrier": "India Post Speed Post",
+        "tracking_number": null,
+        "dispatch_date": null,
+        "estimated_delivery": null
+      },
+      "customer_notes": "",
+      "is_direct_purchase": true,
+      "created_at": "2026-10-19T05:32:02.329283+00:00",
+      "updated_at": "2026-10-19T05:32:02.329283+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d39"
+      }
+    },
+    {
+      "order_number": "ORD-20261019-5226FC",
+      "buyer_id": "6ad5ab51756d623531c39cfc",
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "product_id": "6ad5ab52756d623531c39d3e",
+      "items": [
+        {
+          "product_id": "6ad5ab52756d623531c39d3e",
+          "title": "Handcrafted Terracotta Water Jug (Batch Inconsistency Case)",
+          "category": "Household Goods, Water Jugs & Pitchers",
+          "quantity": 50,
+          "unit": "piece",
+          "unit_price": 350.0,
+          "line_total": 17500.0,
+          "image": ""
+        }
+      ],
+      "quantity": 50,
+      "unit_price": 350.0,
+      "total_amount": 17500.0,
+      "currency": "INR",
+      "payment_method": "cash_on_delivery",
+      "payment_status": "pending_cod",
+      "status": "confirmed",
+      "idempotency_key": "",
+      "delivery_address": {
+        "full_name": "Priya Sundaram",
+        "phone": "9876543211",
+        "street": "44 Bazaar Street",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "pincode": "600001"
+      },
+      "delivery_terms": "Direct artisan fulfillment with tracked postal / courier dispatch",
+      "lead_time_days": 14,
+      "production_progress": [
+        {
+          "stage": "Order Placed & Stock Allocated",
+          "percentage": 15,
+          "notes": "Direct marketplace purchase confirmed. Artisan preparing package for dispatch.",
+          "updated_at": "2026-10-19T05:32:02.337027+00:00"
+        }
+      ],
+      "shipping_details": {
+        "carrier": "India Post Speed Post",
+        "tracking_number": null,
+        "dispatch_date": null,
+        "estimated_delivery": null
+      },
+      "customer_notes": "",
+      "is_direct_purchase": true,
+      "created_at": "2026-10-19T05:32:02.337027+00:00",
+      "updated_at": "2026-10-19T05:32:02.337027+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d41"
+      }
+    },
+    {
+      "order_number": "ORD-20261019-661ACB",
+      "buyer_id": "6ad5ab51756d623531c39cfc",
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "product_id": "6ad5ab52756d623531c39d46",
+      "items": [
+        {
+          "product_id": "6ad5ab52756d623531c39d46",
+          "title": "Rare Sandalwood Hand Fan",
+          "category": "Woodwork & Carving",
+          "quantity": 4,
+          "unit": "piece",
+          "unit_price": 1500.0,
+          "line_total": 6000.0,
+          "image": ""
+        }
+      ],
+      "quantity": 4,
+      "unit_price": 1500.0,
+      "total_amount": 6000.0,
+      "currency": "INR",
+      "payment_method": "cash_on_delivery",
+      "payment_status": "pending_cod",
+      "status": "confirmed",
+      "idempotency_key": "",
+      "delivery_address": {
+        "full_name": "Kavitha Buyer",
+        "phone": "9876543212",
+        "street": "18 Gandhi Road",
+        "city": "Salem",
+        "state": "Tamil Nadu",
+        "pincode": "636001"
+      },
+      "delivery_terms": "Direct artisan fulfillment with tracked postal / courier dispatch",
+      "lead_time_days": 5,
+      "production_progress": [
+        {
+          "stage": "Order Placed & Stock Allocated",
+          "percentage": 15,
+          "notes": "Direct marketplace purchase confirmed. Artisan preparing package for dispatch.",
+          "updated_at": "2026-10-19T05:32:02.343376+00:00"
+        }
+      ],
+      "shipping_details": {
+        "carrier": "India Post Speed Post",
+        "tracking_number": null,
+        "dispatch_date": null,
+        "estimated_delivery": null
+      },
+      "customer_notes": "",
+      "is_direct_purchase": true,
+      "created_at": "2026-10-19T05:32:02.343376+00:00",
+      "updated_at": "2026-10-19T05:32:02.343376+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d48"
+      }
+    }
+  ],
+  "supplier_suborders": [],
+  "conversations": [],
+  "messages": [],
+  "notifications": [
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "title": "New Wholesale Quotation Received",
+      "message": "Artisan Ramanathan Natarajan submitted a quotation of \u20b918,000.00 for 30 units.",
+      "type": "quotation",
+      "link": "/buyer/quotations/6ad5ab52756d623531c39d1b",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.309362+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d1c"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "title": "Quotation Revision #2",
+      "message": "Anita Venkatesh proposed revised terms: 30 units @ \u20b9580.0/unit.",
+      "type": "quotation",
+      "link": "/seller/quotations/6ad5ab52756d623531c39d1b",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.310364+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d1e"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "title": "Quotation Revision #3",
+      "message": "Ramanathan Natarajan proposed revised terms: 30 units @ \u20b9580.0/unit.",
+      "type": "quotation",
+      "link": "/buyer/quotations/6ad5ab52756d623531c39d1b",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.311368+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d20"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "title": "Quotation Accepted",
+      "message": "Your quotation for 30 units was accepted by Anita Venkatesh.",
+      "type": "quotation",
+      "link": "/seller/quotations/6ad5ab52756d623531c39d1b",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.312273+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d22"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "title": "\ud83c\udf89 New Confirmed Order: ORD-20261019-6069E1",
+      "message": "Buyer Anita Venkatesh accepted quotation #6ad5ab! Order value: \u20b917,400.00.",
+      "type": "order",
+      "link": "/seller/orders/6ad5ab52756d623531c39d24",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.313312+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d25"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "title": "Production Update: ORD-20261019-6069E1",
+      "message": "Stage: 'Loom Weaving 50% Completed' reached (50%). Notes: Saree borders completed",
+      "type": "order",
+      "link": "/buyer/orders/6ad5ab52756d623531c39d24",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.314273+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d27"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "title": "Order Dispatched: ORD-20261019-6069E1",
+      "message": "Your order has been dispatched via Blue Dart Surface (Tracking: BD-88991122).",
+      "type": "order",
+      "link": "/buyer/orders/6ad5ab52756d623531c39d24",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.315273+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d29"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "title": "Order Completed: ORD-20261019-6069E1",
+      "message": "Buyer confirmed delivery for order ORD-20261019-6069E1. Total amount \u20b917,400.00 released to artisan account.",
+      "type": "order",
+      "link": "/seller/orders/6ad5ab52756d623531c39d24",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.316933+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d2b"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "title": "New \u26055 Review Received",
+      "message": "Buyer Anita Venkatesh left a 5-star review for order ORD-20261019-6069E1.",
+      "type": "review",
+      "link": "/seller/orders/6ad5ab52756d623531c39d24",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.317551+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d2e"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "title": "\ud83c\udf89 New Direct Order Received: ORD-20261019-9DA0E8",
+      "message": "Buyer Anita Venkatesh placed a direct order for 1 item(s). Total: \u20b94,400.00.",
+      "type": "order",
+      "link": "/seller/orders/6ad5ab52756d623531c39d39",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.329283+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d3a"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "title": "Order Confirmed: ORD-20261019-9DA0E8",
+      "message": "Your order of \u20b94,400.00 from Ramanathan Natarajan has been confirmed. Stock reserved.",
+      "type": "order",
+      "link": "/buyer/orders/6ad5ab52756d623531c39d39",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.329283+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d3b"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "title": "\ud83c\udf89 New Direct Order Received: ORD-20261019-5226FC",
+      "message": "Buyer Anita Venkatesh placed a direct order for 1 item(s). Total: \u20b917,500.00.",
+      "type": "order",
+      "link": "/seller/orders/6ad5ab52756d623531c39d41",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.337027+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d42"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "title": "Order Confirmed: ORD-20261019-5226FC",
+      "message": "Your order of \u20b917,500.00 from Ramanathan Natarajan has been confirmed. Stock reserved.",
+      "type": "order",
+      "link": "/buyer/orders/6ad5ab52756d623531c39d41",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.337027+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d43"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "title": "\ud83c\udf89 New Direct Order Received: ORD-20261019-661ACB",
+      "message": "Buyer Anita Venkatesh placed a direct order for 1 item(s). Total: \u20b96,000.00.",
+      "type": "order",
+      "link": "/seller/orders/6ad5ab52756d623531c39d48",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.343376+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d49"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "title": "Order Confirmed: ORD-20261019-661ACB",
+      "message": "Your order of \u20b96,000.00 from Ramanathan Natarajan has been confirmed. Stock reserved.",
+      "type": "order",
+      "link": "/buyer/orders/6ad5ab52756d623531c39d48",
+      "read": false,
+      "created_at": "2026-10-19T05:32:02.343376+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d4a"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "title": "Verification Decision: Approved (Verified Producer)",
+      "message": "Your artisan verification review has concluded. Status: Approved (Verified Producer). Reviewer notes: Workshop physical photos and pitloom setup verified by field coordinator.",
+      "type": "verification",
+      "link": "/seller/verification",
+      "read": false,
+      "created_at": "2026-10-19T05:32:06.246591+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d50"
+      }
+    },
+    {
+      "user_id": "6ad5ab50756d623531c39cf8",
+      "title": "\ud83d\udd0d New Artisan Verification Dossier Submitted",
+      "message": "Artisan 'Meenakshi Sundaram' (Clay Pottery & Terracotta, Madurai, Tamil Nadu) has submitted complete verification evidence including craft video.",
+      "type": "verification",
+      "link": "/admin",
+      "read": false,
+      "created_at": "2026-10-19T05:32:06.603294+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d62"
+      }
+    },
+    {
+      "user_id": "6ad5ab50756d623531c39cf8",
+      "title": "\ud83d\udd0d New Artisan Verification Dossier Submitted",
+      "message": "Artisan 'Meenakshi Sundaram' (Clay Pottery & Terracotta, Madurai, Tamil Nadu) has submitted complete verification evidence including craft video.",
+      "type": "verification",
+      "link": "/admin",
+      "read": false,
+      "created_at": "2026-10-19T05:32:06.635339+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d64"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "title": "Verification Decision: Approved (Verified Producer)",
+      "message": "Your artisan verification review has concluded. Status: Approved (Verified Producer). Reviewer notes: Authentic rural clay artisan verified.",
+      "type": "verification",
+      "link": "/seller/verification",
+      "read": false,
+      "created_at": "2026-10-19T05:32:06.646294+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d66"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "order_id": "6ad5ab51756d623531c39d0d",
+      "buyer_id": "6ad5ab51756d623531c39cfc",
+      "buyer_name": "Anita Venkatesh",
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "product_id": "6ad5ab51756d623531c39d04",
+      "rating": 5,
+      "craftsmanship_rating": 5,
+      "delivery_rating": 5,
+      "communication_rating": 5,
+      "comment": "Superb authentic handloom weave. The traditional border and drape exceeded expectations for our boutique collection.",
+      "created_at": "2026-10-19T05:32:00.790491+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d0e"
+      }
+    },
+    {
+      "order_id": "6ad5ab52756d623531c39d24",
+      "buyer_id": "6ad5ab51756d623531c39cfc",
+      "buyer_name": "Anita Venkatesh",
+      "seller_id": "6ad5ab51756d623531c39cf9",
+      "product_id": "6ad5ab51756d623531c39d04",
+      "rating": 5,
+      "comment": "Outstanding handloom craftsmanship and fast delivery.",
+      "craftsmanship_rating": 5,
+      "delivery_rating": 5,
+      "communication_rating": 5,
+      "created_at": "2026-10-19T05:32:02.317551+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d2d"
+      }
+    }
+  ],
+  "disputes": [],
+  "audit_logs": [
+    {
+      "user_id": "6ad5aa29699750a53ccad015",
+      "action": "login_success",
+      "resource_type": "users",
+      "resource_id": "6ad5aa29699750a53ccad015",
+      "details": {
+        "email": "admin@marketlink.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:27:06.700444+00:00",
+      "_id": {
+        "$oid": "6ad5aa2a699750a53ccad02c"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "login_success",
+      "resource_type": "users",
+      "resource_id": "6ad5aa29699750a53ccad016",
+      "details": {
+        "email": "seller@marketlink.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:27:06.814563+00:00",
+      "_id": {
+        "$oid": "6ad5aa2a699750a53ccad02d"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad019",
+      "action": "login_success",
+      "resource_type": "users",
+      "resource_id": "6ad5aa29699750a53ccad019",
+      "details": {
+        "email": "buyer@marketlink.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:27:06.927818+00:00",
+      "_id": {
+        "$oid": "6ad5aa2a699750a53ccad02e"
+      }
+    },
+    {
+      "user_id": "system",
+      "action": "login_failed",
+      "resource_type": "users",
+      "resource_id": null,
+      "details": {
+        "email": "buyer@marketlink.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:27:07.045966+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad02f"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad030",
+      "details": {
+        "title": "Kanchipuram Silk Stole with Zari Border",
+        "price": 1200.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.066407+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad031"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_updated",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad030",
+      "details": {
+        "updated_at": "2026-10-19T05:27:07.068232+00:00",
+        "price_per_unit": 1150.0,
+        "stock_quantity": 45
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.068232+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad032"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad030",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.069959+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad033"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "quotation_submitted",
+      "resource_type": "quotations",
+      "resource_id": "6ad5aa2b699750a53ccad038",
+      "details": {
+        "requirement_id": "",
+        "buyer_id": "6ad5aa29699750a53ccad019",
+        "total_price": 18000.0,
+        "quantity": 30,
+        "unit_price": 600.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.079127+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad03a"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad019",
+      "action": "quotation_revised",
+      "resource_type": "quotations",
+      "resource_id": "6ad5aa2b699750a53ccad038",
+      "details": {
+        "revision_num": 2,
+        "quantity": 30,
+        "unit_price": 580.0,
+        "total_price": 17400.0,
+        "lead_time_days": 10,
+        "notes": "Counteroffer: Will confirm at \u20b9580 per unit",
+        "modified_by": "6ad5aa29699750a53ccad019",
+        "role": "buyer",
+        "timestamp": "2026-10-19T05:27:07.080179+00:00"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.080179+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad03c"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "quotation_revised",
+      "resource_type": "quotations",
+      "resource_id": "6ad5aa2b699750a53ccad038",
+      "details": {
+        "revision_num": 3,
+        "quantity": 30,
+        "unit_price": 580.0,
+        "total_price": 17400.0,
+        "lead_time_days": 10,
+        "notes": "Accepted \u20b9580 per unit for 30 units",
+        "modified_by": "6ad5aa29699750a53ccad016",
+        "role": "seller",
+        "timestamp": "2026-10-19T05:27:07.080179+00:00"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.081176+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad03e"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad019",
+      "action": "quotation_accepted",
+      "resource_type": "quotations",
+      "resource_id": "6ad5aa2b699750a53ccad038",
+      "details": {
+        "reason": ""
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.081176+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad040"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad019",
+      "action": "order_created",
+      "resource_type": "orders",
+      "resource_id": "6ad5aa2b699750a53ccad041",
+      "details": {
+        "order_number": "ORD-20261019-E271C6",
+        "amount": 17400.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.083201+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad043"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "production_progress_updated",
+      "resource_type": "orders",
+      "resource_id": "6ad5aa2b699750a53ccad041",
+      "details": {
+        "stage": "Loom Weaving 50% Completed",
+        "percentage": 50,
+        "notes": "Saree borders completed",
+        "updated_at": "2026-10-19T05:27:07.083480+00:00"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.083480+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad045"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "order_dispatched",
+      "resource_type": "orders",
+      "resource_id": "6ad5aa2b699750a53ccad041",
+      "details": {
+        "carrier": "Blue Dart Surface",
+        "tracking_number": "BD-88991122",
+        "dispatch_date": "2026-10-19T05:27:07.084565+00:00",
+        "estimated_delivery": ""
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.084565+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad047"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad019",
+      "action": "order_completed",
+      "resource_type": "orders",
+      "resource_id": "6ad5aa2b699750a53ccad041",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.085642+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad049"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad019",
+      "action": "review_submitted",
+      "resource_type": "reviews",
+      "resource_id": "6ad5aa2b699750a53ccad04a",
+      "details": {
+        "rating": 5,
+        "order_id": "6ad5aa2b699750a53ccad041"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.085642+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad04c"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad04e",
+      "details": {
+        "title": "Authentic Madurai Brass Diya Lamp",
+        "price": 850.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.092885+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad04f"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_updated",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad04e",
+      "details": {
+        "updated_at": "2026-10-19T05:27:07.094884+00:00",
+        "title": "Mastercrafted Madurai Brass Diya Lamp (Temple Grade)",
+        "dimensions": "8 inches height, 500g",
+        "price_per_unit": 920.0,
+        "stock_quantity": 30,
+        "moq": 3
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.094884+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad050"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_stock_updated",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad04e",
+      "details": {
+        "new_stock": 40
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.095884+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad051"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad015",
+      "action": "product_updated",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad04e",
+      "details": {
+        "updated_at": "2026-10-19T05:27:07.096894+00:00",
+        "price_per_unit": 950.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.096894+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad052"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad04e",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.097981+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad053"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad054",
+      "details": {
+        "title": "Toda Hand-Embroidered Shawl",
+        "price": 2200.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.102097+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad055"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad019",
+      "action": "direct_order_placed",
+      "resource_type": "orders",
+      "resource_id": "6ad5aa2b699750a53ccad056",
+      "details": {
+        "order_number": "ORD-20261019-9922B0",
+        "total_amount": 4400.0,
+        "items_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.105070+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad059"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad054",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.106284+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad05a"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad05b",
+      "details": {
+        "title": "Handcrafted Terracotta Water Jug (Batch Inconsistency Case)",
+        "price": 350.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.109376+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad05c"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_stock_updated",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad05b",
+      "details": {
+        "new_stock": 60
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.114034+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad05d"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad019",
+      "action": "direct_order_placed",
+      "resource_type": "orders",
+      "resource_id": "6ad5aa2b699750a53ccad05e",
+      "details": {
+        "order_number": "ORD-20261019-8C4DFF",
+        "total_amount": 17500.0,
+        "items_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.115246+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad061"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad05b",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.116483+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad062"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad063",
+      "details": {
+        "title": "Rare Sandalwood Hand Fan",
+        "price": 1500.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.119418+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad064"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad019",
+      "action": "direct_order_placed",
+      "resource_type": "orders",
+      "resource_id": "6ad5aa2b699750a53ccad065",
+      "details": {
+        "order_number": "ORD-20261019-234254",
+        "total_amount": 6000.0,
+        "items_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.121014+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad068"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2b699750a53ccad063",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:07.122941+00:00",
+      "_id": {
+        "$oid": "6ad5aa2b699750a53ccad069"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2c699750a53ccad06a",
+      "details": {
+        "title": "Artisan Terracotta Water Jug",
+        "price": 450.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:08.549025+00:00",
+      "_id": {
+        "$oid": "6ad5aa2c699750a53ccad06b"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad016",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5aa2c699750a53ccad06a",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:10.321886+00:00",
+      "_id": {
+        "$oid": "6ad5aa2e699750a53ccad06c"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad015",
+      "action": "admin_verification_decision",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5aa29699750a53ccad016",
+      "details": {
+        "reviewer_id": "6ad5aa29699750a53ccad015",
+        "reviewer_email": "admin@marketlink.local",
+        "decision": "verified_producer",
+        "reason": "Workshop physical photos and pitloom setup verified by field coordinator.",
+        "previous_status": "verified_producer",
+        "new_status": "verified_producer",
+        "timestamp": "2026-10-19T05:27:11.893671+00:00"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:11.897940+00:00",
+      "_id": {
+        "$oid": "6ad5aa2f699750a53ccad06e"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad015",
+      "action": "user_suspended",
+      "resource_type": "users",
+      "resource_id": "6ad5aa2a699750a53ccad01b",
+      "details": {
+        "reason": "Temporary suspension pending reverification of registered address.",
+        "target_email": "kaveri_shg@marketlink.local"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:11.900686+00:00",
+      "_id": {
+        "$oid": "6ad5aa2f699750a53ccad06f"
+      }
+    },
+    {
+      "user_id": "6ad5aa29699750a53ccad015",
+      "action": "user_active",
+      "resource_type": "users",
+      "resource_id": "6ad5aa2a699750a53ccad01b",
+      "details": {
+        "reason": "",
+        "target_email": "kaveri_shg@marketlink.local"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:11.902440+00:00",
+      "_id": {
+        "$oid": "6ad5aa2f699750a53ccad070"
+      }
+    },
+    {
+      "user_id": "6ad5aa30699750a53ccad071",
+      "action": "user_register",
+      "resource_type": "users",
+      "resource_id": "6ad5aa30699750a53ccad071",
+      "details": {
+        "role": "seller",
+        "email": "saranya_artisan@test.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:27:12.028492+00:00",
+      "_id": {
+        "$oid": "6ad5aa30699750a53ccad074"
+      }
+    },
+    {
+      "user_id": "6ad5aa30699750a53ccad071",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5aa30699750a53ccad075",
+      "details": {
+        "title": "Authentic Silk Handloom Saree",
+        "price": 4500.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:12.030491+00:00",
+      "_id": {
+        "$oid": "6ad5aa30699750a53ccad076"
+      }
+    },
+    {
+      "user_id": "6ad5aa30699750a53ccad071",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5aa30699750a53ccad077",
+      "details": {
+        "title": "Draft Silk Saree Listing",
+        "price": 4500.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:12.030491+00:00",
+      "_id": {
+        "$oid": "6ad5aa30699750a53ccad078"
+      }
+    },
+    {
+      "user_id": "6ad5aa30699750a53ccad071",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5aa30699750a53ccad079",
+      "details": {
+        "type": "artisan_card",
+        "is_video": false
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:12.062566+00:00",
+      "_id": {
+        "$oid": "6ad5aa30699750a53ccad07a"
+      }
+    },
+    {
+      "user_id": "6ad5aa30699750a53ccad071",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5aa30699750a53ccad07b",
+      "details": {
+        "type": "craft_video",
+        "is_video": true
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:12.065651+00:00",
+      "_id": {
+        "$oid": "6ad5aa30699750a53ccad07c"
+      }
+    },
+    {
+      "user_id": "6ad5aa30699750a53ccad071",
+      "action": "verification_submitted",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5aa30699750a53ccad071",
+      "details": {
+        "full_name": "Saranya B",
+        "craft_category": "Textiles & Handlooms",
+        "documents_count": 1,
+        "video_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:27:12.079700+00:00",
+      "_id": {
+        "$oid": "6ad5aa30699750a53ccad07e"
+      }
+    },
+    {
+      "user_id": "6ad5aac73e5e08540f0f7891",
+      "action": "user_register",
+      "resource_type": "users",
+      "resource_id": "6ad5aac73e5e08540f0f7891",
+      "details": {
+        "role": "seller",
+        "email": "saranya_3f8caa7d@test.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:29:43.760110+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f7894"
+      }
+    },
+    {
+      "user_id": "6ad5aac73e5e08540f0f7891",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5aac73e5e08540f0f7895",
+      "details": {
+        "title": "Authentic Silk Handloom Saree",
+        "price": 4500.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:29:43.791434+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f7896"
+      }
+    },
+    {
+      "user_id": "6ad5aac73e5e08540f0f7891",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5aac73e5e08540f0f7897",
+      "details": {
+        "title": "Draft Silk Saree Listing",
+        "price": 4500.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:29:43.792446+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f7898"
+      }
+    },
+    {
+      "user_id": "6ad5aac73e5e08540f0f7891",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5aac73e5e08540f0f7899",
+      "details": {
+        "type": "artisan_card",
+        "is_video": false
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:29:43.822896+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f789a"
+      }
+    },
+    {
+      "user_id": "6ad5aac73e5e08540f0f7891",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5aac73e5e08540f0f789b",
+      "details": {
+        "type": "craft_video",
+        "is_video": true
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:29:43.825277+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f789c"
+      }
+    },
+    {
+      "user_id": "6ad5aac73e5e08540f0f7891",
+      "action": "verification_submitted",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5aac73e5e08540f0f7891",
+      "details": {
+        "full_name": "Saranya B",
+        "craft_category": "Textiles & Handlooms",
+        "documents_count": 1,
+        "video_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:29:43.836277+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f789e"
+      }
+    },
+    {
+      "user_id": "6ad5aac73e5e08540f0f789f",
+      "action": "user_register",
+      "resource_type": "users",
+      "resource_id": "6ad5aac73e5e08540f0f789f",
+      "details": {
+        "role": "seller",
+        "email": "intruder_seller@test.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:29:43.946938+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f78a2"
+      }
+    },
+    {
+      "user_id": "6ad5aac63e5e08540f0f787a",
+      "action": "admin_verification_decision",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5aac73e5e08540f0f7891",
+      "details": {
+        "reviewer_id": "6ad5aac63e5e08540f0f787a",
+        "reviewer_email": "admin@marketlink.local",
+        "decision": "rejected",
+        "reason": "Please provide higher resolution video of the pitloom pedal action.",
+        "previous_status": "pending",
+        "new_status": "rejected",
+        "timestamp": "2026-10-19T05:29:43.953698+00:00"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:29:43.957757+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f78a4"
+      }
+    },
+    {
+      "user_id": "6ad5aac73e5e08540f0f7891",
+      "action": "verification_submitted",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5aac73e5e08540f0f7891",
+      "details": {
+        "full_name": "Saranya B",
+        "craft_category": "Textiles & Handlooms",
+        "documents_count": 1,
+        "video_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:29:43.962826+00:00",
+      "_id": {
+        "$oid": "6ad5aac73e5e08540f0f78a6"
+      }
+    },
+    {
+      "user_id": "6ad5aae9708af45ea5465114",
+      "action": "user_register",
+      "resource_type": "users",
+      "resource_id": "6ad5aae9708af45ea5465114",
+      "details": {
+        "role": "seller",
+        "email": "artisan_391837e1@example.com"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:30:17.383023+00:00",
+      "_id": {
+        "$oid": "6ad5aae9708af45ea5465117"
+      }
+    },
+    {
+      "user_id": "6ad5ab2912be684d6749d8c2",
+      "action": "user_register",
+      "resource_type": "users",
+      "resource_id": "6ad5ab2912be684d6749d8c2",
+      "details": {
+        "role": "seller",
+        "email": "artisan_177ea333@example.com"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:31:21.265356+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8c5"
+      }
+    },
+    {
+      "user_id": "6ad5ab2912be684d6749d8c2",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab2912be684d6749d8c6",
+      "details": {
+        "type": "artisan_card",
+        "is_video": false
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:21.302729+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8c7"
+      }
+    },
+    {
+      "user_id": "6ad5ab2912be684d6749d8c2",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab2912be684d6749d8c8",
+      "details": {
+        "type": "craft_video",
+        "is_video": true
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:21.306494+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8c9"
+      }
+    },
+    {
+      "user_id": "6ad5ab2912be684d6749d8c2",
+      "action": "evidence_deleted",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab2912be684d6749d8c6",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:21.312501+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8ca"
+      }
+    },
+    {
+      "user_id": "6ad5ab2912be684d6749d8c2",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab2912be684d6749d8cb",
+      "details": {
+        "type": "registration_cert",
+        "is_video": false
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:21.316752+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8cc"
+      }
+    },
+    {
+      "user_id": "6ad5ab2912be684d6749d8cd",
+      "action": "user_register",
+      "resource_type": "users",
+      "resource_id": "6ad5ab2912be684d6749d8cd",
+      "details": {
+        "role": "buyer",
+        "email": "buyer_7c875c34@example.com"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:31:21.431858+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8cf"
+      }
+    },
+    {
+      "user_id": "6ad5ab2912be684d6749d8c2",
+      "action": "verification_submitted",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5ab2912be684d6749d8c2",
+      "details": {
+        "full_name": "Meenakshi Sundaram",
+        "craft_category": "Clay Pottery & Terracotta",
+        "documents_count": 1,
+        "video_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:21.439949+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8d1"
+      }
+    },
+    {
+      "user_id": "6ad5ab2912be684d6749d8c2",
+      "action": "verification_submitted",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5ab2912be684d6749d8c2",
+      "details": {
+        "full_name": "Meenakshi Sundaram",
+        "craft_category": "Clay Pottery & Terracotta",
+        "documents_count": 1,
+        "video_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:21.457829+00:00",
+      "_id": {
+        "$oid": "6ad5ab2912be684d6749d8d3"
+      }
+    },
+    {
+      "user_id": "6ad5ab418bf07dccef5332f4",
+      "action": "user_register",
+      "resource_type": "users",
+      "resource_id": "6ad5ab418bf07dccef5332f4",
+      "details": {
+        "role": "seller",
+        "email": "artisan_0332812b@example.com"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:31:45.901568+00:00",
+      "_id": {
+        "$oid": "6ad5ab418bf07dccef5332f7"
+      }
+    },
+    {
+      "user_id": "6ad5ab418bf07dccef5332f4",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab418bf07dccef5332f8",
+      "details": {
+        "type": "artisan_card",
+        "is_video": false
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:45.936632+00:00",
+      "_id": {
+        "$oid": "6ad5ab418bf07dccef5332f9"
+      }
+    },
+    {
+      "user_id": "6ad5ab418bf07dccef5332f4",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab418bf07dccef5332fa",
+      "details": {
+        "type": "craft_video",
+        "is_video": true
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:45.940232+00:00",
+      "_id": {
+        "$oid": "6ad5ab418bf07dccef5332fb"
+      }
+    },
+    {
+      "user_id": "6ad5ab418bf07dccef5332f4",
+      "action": "evidence_deleted",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab418bf07dccef5332f8",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:45.948078+00:00",
+      "_id": {
+        "$oid": "6ad5ab418bf07dccef5332fc"
+      }
+    },
+    {
+      "user_id": "6ad5ab418bf07dccef5332f4",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab418bf07dccef5332fd",
+      "details": {
+        "type": "registration_cert",
+        "is_video": false
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:45.951090+00:00",
+      "_id": {
+        "$oid": "6ad5ab418bf07dccef5332fe"
+      }
+    },
+    {
+      "user_id": "6ad5ab428bf07dccef5332ff",
+      "action": "user_register",
+      "resource_type": "users",
+      "resource_id": "6ad5ab428bf07dccef5332ff",
+      "details": {
+        "role": "buyer",
+        "email": "buyer_63218eb9@example.com"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:31:46.066745+00:00",
+      "_id": {
+        "$oid": "6ad5ab428bf07dccef533301"
+      }
+    },
+    {
+      "user_id": "6ad5ab418bf07dccef5332f4",
+      "action": "verification_submitted",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5ab418bf07dccef5332f4",
+      "details": {
+        "full_name": "Meenakshi Sundaram",
+        "craft_category": "Clay Pottery & Terracotta",
+        "documents_count": 1,
+        "video_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:46.073243+00:00",
+      "_id": {
+        "$oid": "6ad5ab428bf07dccef533303"
+      }
+    },
+    {
+      "user_id": "6ad5ab418bf07dccef5332f4",
+      "action": "verification_submitted",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5ab418bf07dccef5332f4",
+      "details": {
+        "full_name": "Meenakshi Sundaram",
+        "craft_category": "Clay Pottery & Terracotta",
+        "documents_count": 1,
+        "video_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:31:46.089015+00:00",
+      "_id": {
+        "$oid": "6ad5ab428bf07dccef533305"
+      }
+    },
+    {
+      "user_id": "6ad5ab50756d623531c39cf8",
+      "action": "login_success",
+      "resource_type": "users",
+      "resource_id": "6ad5ab50756d623531c39cf8",
+      "details": {
+        "email": "admin@marketlink.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:32:01.926176+00:00",
+      "_id": {
+        "$oid": "6ad5ab51756d623531c39d0f"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "login_success",
+      "resource_type": "users",
+      "resource_id": "6ad5ab51756d623531c39cf9",
+      "details": {
+        "email": "seller@marketlink.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:32:02.042930+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d10"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "action": "login_success",
+      "resource_type": "users",
+      "resource_id": "6ad5ab51756d623531c39cfc",
+      "details": {
+        "email": "buyer@marketlink.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:32:02.157956+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d11"
+      }
+    },
+    {
+      "user_id": "system",
+      "action": "login_failed",
+      "resource_type": "users",
+      "resource_id": null,
+      "details": {
+        "email": "buyer@marketlink.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:32:02.276970+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d12"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d13",
+      "details": {
+        "title": "Kanchipuram Silk Stole with Zari Border",
+        "price": 1200.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.297743+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d14"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_updated",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d13",
+      "details": {
+        "updated_at": "2026-10-19T05:32:02.299651+00:00",
+        "price_per_unit": 1150.0,
+        "stock_quantity": 45
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.299651+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d15"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d13",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.300871+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d16"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "quotation_submitted",
+      "resource_type": "quotations",
+      "resource_id": "6ad5ab52756d623531c39d1b",
+      "details": {
+        "requirement_id": "",
+        "buyer_id": "6ad5ab51756d623531c39cfc",
+        "total_price": 18000.0,
+        "quantity": 30,
+        "unit_price": 600.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.309362+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d1d"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "action": "quotation_revised",
+      "resource_type": "quotations",
+      "resource_id": "6ad5ab52756d623531c39d1b",
+      "details": {
+        "revision_num": 2,
+        "quantity": 30,
+        "unit_price": 580.0,
+        "total_price": 17400.0,
+        "lead_time_days": 10,
+        "notes": "Counteroffer: Will confirm at \u20b9580 per unit",
+        "modified_by": "6ad5ab51756d623531c39cfc",
+        "role": "buyer",
+        "timestamp": "2026-10-19T05:32:02.310364+00:00"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.310364+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d1f"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "quotation_revised",
+      "resource_type": "quotations",
+      "resource_id": "6ad5ab52756d623531c39d1b",
+      "details": {
+        "revision_num": 3,
+        "quantity": 30,
+        "unit_price": 580.0,
+        "total_price": 17400.0,
+        "lead_time_days": 10,
+        "notes": "Accepted \u20b9580 per unit for 30 units",
+        "modified_by": "6ad5ab51756d623531c39cf9",
+        "role": "seller",
+        "timestamp": "2026-10-19T05:32:02.311368+00:00"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.311368+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d21"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "action": "quotation_accepted",
+      "resource_type": "quotations",
+      "resource_id": "6ad5ab52756d623531c39d1b",
+      "details": {
+        "reason": ""
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.312273+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d23"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "action": "order_created",
+      "resource_type": "orders",
+      "resource_id": "6ad5ab52756d623531c39d24",
+      "details": {
+        "order_number": "ORD-20261019-6069E1",
+        "amount": 17400.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.314273+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d26"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "production_progress_updated",
+      "resource_type": "orders",
+      "resource_id": "6ad5ab52756d623531c39d24",
+      "details": {
+        "stage": "Loom Weaving 50% Completed",
+        "percentage": 50,
+        "notes": "Saree borders completed",
+        "updated_at": "2026-10-19T05:32:02.314273+00:00"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.315273+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d28"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "order_dispatched",
+      "resource_type": "orders",
+      "resource_id": "6ad5ab52756d623531c39d24",
+      "details": {
+        "carrier": "Blue Dart Surface",
+        "tracking_number": "BD-88991122",
+        "dispatch_date": "2026-10-19T05:32:02.315273+00:00",
+        "estimated_delivery": ""
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.316377+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d2a"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "action": "order_completed",
+      "resource_type": "orders",
+      "resource_id": "6ad5ab52756d623531c39d24",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.316933+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d2c"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "action": "review_submitted",
+      "resource_type": "reviews",
+      "resource_id": "6ad5ab52756d623531c39d2d",
+      "details": {
+        "rating": 5,
+        "order_id": "6ad5ab52756d623531c39d24"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.317551+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d2f"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d31",
+      "details": {
+        "title": "Authentic Madurai Brass Diya Lamp",
+        "price": 850.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.321833+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d32"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_updated",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d31",
+      "details": {
+        "updated_at": "2026-10-19T05:32:02.323184+00:00",
+        "title": "Mastercrafted Madurai Brass Diya Lamp (Temple Grade)",
+        "dimensions": "8 inches height, 500g",
+        "price_per_unit": 920.0,
+        "stock_quantity": 30,
+        "moq": 3
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.323184+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d33"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_stock_updated",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d31",
+      "details": {
+        "new_stock": 40
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.324277+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d34"
+      }
+    },
+    {
+      "user_id": "6ad5ab50756d623531c39cf8",
+      "action": "product_updated",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d31",
+      "details": {
+        "updated_at": "2026-10-19T05:32:02.325277+00:00",
+        "price_per_unit": 950.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.325277+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d35"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d31",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.325277+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d36"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d37",
+      "details": {
+        "title": "Toda Hand-Embroidered Shawl",
+        "price": 2200.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.328301+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d38"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "action": "direct_order_placed",
+      "resource_type": "orders",
+      "resource_id": "6ad5ab52756d623531c39d39",
+      "details": {
+        "order_number": "ORD-20261019-9DA0E8",
+        "total_amount": 4400.0,
+        "items_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.330345+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d3c"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d37",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.331390+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d3d"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d3e",
+      "details": {
+        "title": "Handcrafted Terracotta Water Jug (Batch Inconsistency Case)",
+        "price": 350.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.333284+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d3f"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_stock_updated",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d3e",
+      "details": {
+        "new_stock": 60
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.335386+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d40"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "action": "direct_order_placed",
+      "resource_type": "orders",
+      "resource_id": "6ad5ab52756d623531c39d41",
+      "details": {
+        "order_number": "ORD-20261019-5226FC",
+        "total_amount": 17500.0,
+        "items_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.337528+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d44"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d3e",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.339029+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d45"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d46",
+      "details": {
+        "title": "Rare Sandalwood Hand Fan",
+        "price": 1500.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.342038+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d47"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cfc",
+      "action": "direct_order_placed",
+      "resource_type": "orders",
+      "resource_id": "6ad5ab52756d623531c39d48",
+      "details": {
+        "order_number": "ORD-20261019-661ACB",
+        "total_amount": 6000.0,
+        "items_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.343376+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d4b"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5ab52756d623531c39d46",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:02.346428+00:00",
+      "_id": {
+        "$oid": "6ad5ab52756d623531c39d4c"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5ab53756d623531c39d4d",
+      "details": {
+        "title": "Artisan Terracotta Water Jug",
+        "price": 450.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:03.631071+00:00",
+      "_id": {
+        "$oid": "6ad5ab53756d623531c39d4e"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "product_archived",
+      "resource_type": "products",
+      "resource_id": "6ad5ab53756d623531c39d4d",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:05.241397+00:00",
+      "_id": {
+        "$oid": "6ad5ab55756d623531c39d4f"
+      }
+    },
+    {
+      "user_id": "6ad5ab50756d623531c39cf8",
+      "action": "admin_verification_decision",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5ab51756d623531c39cf9",
+      "details": {
+        "reviewer_id": "6ad5ab50756d623531c39cf8",
+        "reviewer_email": "admin@marketlink.local",
+        "decision": "verified_producer",
+        "reason": "Workshop physical photos and pitloom setup verified by field coordinator.",
+        "previous_status": "verified_producer",
+        "new_status": "verified_producer",
+        "timestamp": "2026-10-19T05:32:06.246591+00:00"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.253907+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d51"
+      }
+    },
+    {
+      "user_id": "6ad5ab50756d623531c39cf8",
+      "action": "user_suspended",
+      "resource_type": "users",
+      "resource_id": "6ad5ab51756d623531c39cfe",
+      "details": {
+        "reason": "Temporary suspension pending reverification of registered address.",
+        "target_email": "kaveri_shg@marketlink.local"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.256182+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d52"
+      }
+    },
+    {
+      "user_id": "6ad5ab50756d623531c39cf8",
+      "action": "user_active",
+      "resource_type": "users",
+      "resource_id": "6ad5ab51756d623531c39cfe",
+      "details": {
+        "reason": "",
+        "target_email": "kaveri_shg@marketlink.local"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.256182+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d53"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "action": "user_register",
+      "resource_type": "users",
+      "resource_id": "6ad5ab56756d623531c39d54",
+      "details": {
+        "role": "seller",
+        "email": "artisan_6caec71d@example.com"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:32:06.385633+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d57"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab56756d623531c39d58",
+      "details": {
+        "type": "artisan_card",
+        "is_video": false
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.461036+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d59"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab56756d623531c39d5a",
+      "details": {
+        "type": "craft_video",
+        "is_video": true
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.466266+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d5b"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "action": "evidence_deleted",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab56756d623531c39d58",
+      "details": {},
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.474895+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d5c"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab56756d623531c39d5d",
+      "details": {
+        "type": "registration_cert",
+        "is_video": false
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.479835+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d5e"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d5f",
+      "action": "user_register",
+      "resource_type": "users",
+      "resource_id": "6ad5ab56756d623531c39d5f",
+      "details": {
+        "role": "buyer",
+        "email": "buyer_f9f62fef@example.com"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:32:06.601674+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d61"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "action": "verification_submitted",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5ab56756d623531c39d54",
+      "details": {
+        "full_name": "Meenakshi Sundaram",
+        "craft_category": "Clay Pottery & Terracotta",
+        "documents_count": 1,
+        "video_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.612311+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d63"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d54",
+      "action": "verification_submitted",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5ab56756d623531c39d54",
+      "details": {
+        "full_name": "Meenakshi Sundaram",
+        "craft_category": "Clay Pottery & Terracotta",
+        "documents_count": 1,
+        "video_count": 1
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.645293+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d65"
+      }
+    },
+    {
+      "user_id": "6ad5ab50756d623531c39cf8",
+      "action": "admin_verification_decision",
+      "resource_type": "seller_verifications",
+      "resource_id": "6ad5ab56756d623531c39d54",
+      "details": {
+        "reviewer_id": "6ad5ab50756d623531c39cf8",
+        "reviewer_email": "admin@marketlink.local",
+        "decision": "verified_producer",
+        "reason": "Authentic rural clay artisan verified.",
+        "previous_status": "pending",
+        "new_status": "verified_producer",
+        "timestamp": "2026-10-19T05:32:06.646294+00:00"
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.654057+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d67"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d68",
+      "action": "user_register",
+      "resource_type": "users",
+      "resource_id": "6ad5ab56756d623531c39d68",
+      "details": {
+        "role": "seller",
+        "email": "saranya_c1a34632@test.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T05:32:06.782204+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d6b"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d68",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5ab56756d623531c39d6c",
+      "details": {
+        "title": "Authentic Silk Handloom Saree",
+        "price": 4500.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.786565+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d6d"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d68",
+      "action": "product_created",
+      "resource_type": "products",
+      "resource_id": "6ad5ab56756d623531c39d6e",
+      "details": {
+        "title": "Draft Silk Saree Listing",
+        "price": 4500.0
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.787582+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d6f"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d68",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab56756d623531c39d70",
+      "details": {
+        "type": "artisan_card",
+        "is_video": false
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.802489+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d71"
+      }
+    },
+    {
+      "user_id": "6ad5ab56756d623531c39d68",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5ab56756d623531c39d72",
+      "details": {
+        "type": "craft_video",
+        "is_video": true
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T05:32:06.805793+00:00",
+      "_id": {
+        "$oid": "6ad5ab56756d623531c39d73"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "login_success",
+      "resource_type": "users",
+      "resource_id": "6ad5ab51756d623531c39cf9",
+      "details": {
+        "email": "seller@marketlink.local"
+      },
+      "ip_address": "127.0.0.1",
+      "timestamp": "2026-10-19T06:02:44.952480+00:00",
+      "_id": {
+        "$oid": "6ad5b28482d0484270e6acec"
+      }
+    },
+    {
+      "user_id": "6ad5ab51756d623531c39cf9",
+      "action": "evidence_uploaded",
+      "resource_type": "verification_evidence",
+      "resource_id": "6ad5b2df82d0484270e6aced",
+      "details": {
+        "type": "identity_proof",
+        "is_video": false
+      },
+      "ip_address": null,
+      "timestamp": "2026-10-19T06:04:15.533499+00:00",
+      "_id": {
+        "$oid": "6ad5b2df82d0484270e6acee"
+      }
+    }
+  ]
+}
