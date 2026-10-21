@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Package } from 'lucide-react';
 
+const API_BASE = import.meta.env.VITE_API_URL || '';
+
 /**
  * Resolves any product image string, array, relative or absolute URL into a safe, valid browser URL.
  */
@@ -21,11 +23,11 @@ export function getProductImageUrl(img?: any): string {
   // Strip accidental double prefixes like /api/uploads//api/products/images/...
   if (str.includes('/api/products/images/')) {
     const idx = str.indexOf('/api/products/images/');
-    return str.substring(idx);
+    return `${API_BASE}${str.substring(idx)}`;
   }
-  if (str.startsWith('/api/')) return str;
-  if (str.startsWith('/')) return `/api${str}`;
-  return `/api/products/images/${str}`;
+  if (str.startsWith('/api/')) return `${API_BASE}${str}`;
+  if (str.startsWith('/')) return `${API_BASE}/api${str}`;
+  return `${API_BASE}/api/products/images/${str}`;
 }
 
 interface ProductImageProps {
