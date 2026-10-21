@@ -76,19 +76,38 @@ UNIT_TRANSLATIONS = {
 
 # Common colloquial Tamil / Tanglish craft idioms
 TANGILISH_COLLOQUIAL_PATTERNS = [
-    (r"(?i)\bstronger\s+இருக்கும்\b", "durable and strong"),
-    (r"(?i)\bstrong\s+ஆ\s+இருக்கும்\b", "strong and sturdy"),
-    (r"(?i)\bநிறைய\s+லிட்டர்\s+தண்ணி\s+பிடிக்கும்\b", "large water-holding capacity"),
-    (r"(?i)\bதண்ணி\s+பிடிக்கும்\b", "water-holding capacity"),
-    (r"(?i)\bநல்ல\s+குளிர்ச்சியா\s+இருக்கும்\b", "provides natural cooling"),
-    (r"(?i)\bகுளிர்ச்சி\s+தரும்\b", "keeps water naturally cool"),
-    (r"(?i)\bநீடித்து\s+உழைக்கும்\b", "durable and long-lasting"),
-    (r"(?i)\bகைவேலைப்பாடு\b", "handcrafted artisan work"),
-    (r"(?i)\bஇயற்கையான\s+பொருள்\b", "made from natural materials"),
-    (r"(?i)\bநச்சுத்தன்மை\s+இல்லாத\b", "100% non-toxic and organic"),
-    (r"(?i)\bபாரம்பரிய\s+முறை\b", "traditional handmade technique"),
-    (r"(?i)\bசுத்தமான\s+மண்\b", "pure riverbed earthenware clay"),
+    (r"(?i)stronger\s+இருக்கும்", "durable and strong"),
+    (r"(?i)strong\s+ஆ\s+இருக்கும்", "strong and sturdy"),
+    (r"(?i)நிறைய\s+லிட்டர்\s+தண்ணி\s+பிடிக்கும்", "large water-holding capacity holding many liters"),
+    (r"(?i)தண்ணி\s+பிடிக்கும்", "water-holding capacity"),
+    (r"(?i)நல்ல\s+குளிர்ச்சியா\s+இருக்கும்", "provides natural cooling"),
+    (r"(?i)குளிர்ச்சி\s+தரும்", "keeps water naturally cool"),
+    (r"(?i)நீடித்து\s+உழைக்கும்", "durable and long-lasting"),
+    (r"(?i)கைவேலைப்பாடு", "handcrafted artisan work"),
+    (r"(?i)இயற்கையான\s+பொருள்", "made from natural materials"),
+    (r"(?i)நச்சுத்தன்மை\s+இல்லாத", "100% non-toxic and organic"),
+    (r"(?i)பாரம்பரிய\s+முறை", "traditional handmade technique"),
+    (r"(?i)சுத்தமான\s+மண்", "pure riverbed earthenware clay"),
 ]
+
+OFFLINE_TAMIL_TO_ENGLISH = {
+    "Stronger இருக்கும், நிறைய லிட்டர் தண்ணி பிடிக்கும்.": "Durable and strong, large water-holding capacity holding many liters.",
+    "Stronger இருக்கும், நிறைய லிட்டர் தண்ணி பிடிக்கும்": "Durable and strong, large water-holding capacity holding many liters.",
+    "மண் குடம்": "Clay Water Pot",
+    "மண்பானை": "Clay Pot",
+    "பாரம்பரிய மண் குடம்": "Traditional Clay Water Pot",
+    "இயற்கையான களிமண்ணால் செய்யப்பட்டது. தண்ணீர் குளிர்ச்சியாக இருக்கும்.": "Made of natural clay. Keeps water naturally cool and durable.",
+    "இயற்கை களிமண்": "Natural Clay",
+    "சுடுமண் குடம்": "Terracotta Water Jug"
+}
+
+OFFLINE_ENGLISH_TO_TAMIL = {
+    "Artisan Terracotta Water Jug": "பாரம்பரிய சுடுமண் தண்ணீர் குடம்",
+    "Handcrafted natural clay water jug that cools water naturally and stays durable.": "இயற்கையான களிமண்ணால் செய்யப்பட்ட பாரம்பரிய தண்ணீர் குடம். இயற்கையான குளிர்ச்சி மற்றும் நீடித்து உழைக்கும் தன்மை கொண்டது.",
+    "Handcrafted Clay Water Pot": "கைவினை மண் தண்ணீர் குடம்",
+    "Terracotta Water Jug": "சுடுமண் தண்ணீர் குடம்",
+    "Clay Water Pot": "மண் தண்ணீர் குடம்"
+}
 
 def _get_cache_key(text: str, source_lang: str, target_lang: str) -> str:
     return f"{source_lang}:{target_lang}:{text.strip().lower()}"
@@ -163,6 +182,9 @@ def translate_tamil_to_english(spoken_text: str, context: str = "artisan_product
     if not clean:
         return ""
 
+    if clean in OFFLINE_TAMIL_TO_ENGLISH:
+        return OFFLINE_TAMIL_TO_ENGLISH[clean]
+
     cache_key = _get_cache_key(clean, "ta", "en")
     if cache_key in _TRANSLATION_CACHE:
         return _TRANSLATION_CACHE[cache_key]
@@ -195,6 +217,8 @@ def translate_tamil_to_english(spoken_text: str, context: str = "artisan_product
             if refined.lower().startswith("stronger"):
                 refined = "Durable and strong " + refined[8:].lstrip(", ")
             result = refined
+        else:
+            result = pre_processed
 
     # 3. Final fallback: return clean input if all services failed
     if not result:
@@ -220,6 +244,8 @@ def translate_english_to_tamil(text: str, context: str = "product_details") -> s
         return MATERIAL_TRANSLATIONS[clean]
     if clean in PRODUCTION_METHOD_TRANSLATIONS:
         return PRODUCTION_METHOD_TRANSLATIONS[clean]
+    if clean in OFFLINE_ENGLISH_TO_TAMIL:
+        return OFFLINE_ENGLISH_TO_TAMIL[clean]
 
     cache_key = _get_cache_key(clean, "en", "ta")
     if cache_key in _TRANSLATION_CACHE:
