@@ -268,11 +268,10 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
         setImageHash(res.hashes.phash);
       }
 
-      const enhanced = res.enhanced_image?.enhanced_image_url || res.enhanced_image?.enhanced_url;
-      if (enhanced) {
-        setEnhancedImageUrl(enhanced);
+      if (res.enhanced_image?.enhanced_url) {
+        setEnhancedImageUrl(res.enhanced_image.enhanced_url);
         setSelectedImageChoice('enhanced');
-        setEnhancementDisclaimer(res.enhanced_image.disclaimer || 'Studio pure white background applied without altering product.');
+        setEnhancementDisclaimer(res.enhanced_image.disclaimer || '');
       }
 
       if (res.duplicate_warnings && res.duplicate_warnings.length > 0) {
@@ -326,11 +325,10 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
         backdrop_style: style,
         artisan_controlled: true,
       });
-      const enhanced = res.enhanced_image_url || res.enhanced_url;
-      if (enhanced) {
-        setEnhancedImageUrl(enhanced);
+      if (res.enhanced_image_url) {
+        setEnhancedImageUrl(res.enhanced_image_url);
         setSelectedImageChoice('enhanced');
-        setEnhancementDisclaimer(res.disclaimer || 'Studio pure white background applied without altering product.');
+        setEnhancementDisclaimer(res.disclaimer || '');
       }
     } catch (err: any) {
       console.error('Enhancement retry failed:', err);
@@ -705,37 +703,6 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
               <div className="space-y-4">
                 {enhancedImageUrl ? (
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {/* PURE WHITE STUDIO CARD (RECOMMENDED) */}
-                    <div
-                      onClick={() => setSelectedImageChoice('enhanced')}
-                      className={`p-3.5 rounded-2xl border-2 transition-all cursor-pointer bg-white relative ${
-                        selectedImageChoice === 'enhanced'
-                          ? 'border-forest-700 ring-2 ring-forest-600/20 shadow-md'
-                          : 'border-stone-200 hover:border-stone-300 opacity-80'
-                      }`}
-                    >
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-xs font-bold text-forest-900 flex items-center gap-1">
-                          <Wand2 className="w-3.5 h-3.5 text-emerald-600" /> Pure White Background (Recommended)
-                        </span>
-                        {selectedImageChoice === 'enhanced' && (
-                          <span className="bg-forest-800 text-white text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
-                            <Check className="w-3 h-3" /> Selected
-                          </span>
-                        )}
-                      </div>
-                      <div className="w-full h-48 rounded-xl overflow-hidden bg-white border border-stone-200 flex items-center justify-center p-2 shadow-inner">
-                        <img
-                          src={enhancedImageUrl}
-                          alt="Pure white background product"
-                          className="w-full h-full object-contain rounded-lg"
-                        />
-                      </div>
-                      <p className="text-[11px] text-stone-600 mt-2 font-medium">
-                        Clean e-commerce white (#FFFFFF). Authentic product details & colors 100% untouched.
-                      </p>
-                    </div>
-
                     {/* ORIGINAL PHOTOGRAPH CARD */}
                     <div
                       onClick={() => setSelectedImageChoice('original')}
@@ -747,7 +714,7 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
                     >
                       <div className="flex items-center justify-between mb-2">
                         <span className="text-xs font-bold text-charcoal-800 flex items-center gap-1">
-                          <Eye className="w-3.5 h-3.5 text-stone-600" /> Original Workshop Photo
+                          <Eye className="w-3.5 h-3.5 text-forest-700" /> Original Craft Photo
                         </span>
                         {selectedImageChoice === 'original' && (
                           <span className="bg-forest-800 text-white text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
@@ -763,7 +730,38 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
                         />
                       </div>
                       <p className="text-[11px] text-stone-500 mt-2">
-                        Your authentic workshop photograph with original background.
+                        Your untouched authentic workshop photograph.
+                      </p>
+                    </div>
+
+                    {/* STUDIO ENHANCED CARD */}
+                    <div
+                      onClick={() => setSelectedImageChoice('enhanced')}
+                      className={`p-3.5 rounded-2xl border-2 transition-all cursor-pointer bg-white relative ${
+                        selectedImageChoice === 'enhanced'
+                          ? 'border-forest-700 ring-2 ring-forest-600/20 shadow-md'
+                          : 'border-stone-200 hover:border-stone-300 opacity-80'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-xs font-bold text-forest-900 flex items-center gap-1">
+                          <Wand2 className="w-3.5 h-3.5 text-forest-700" /> Studio Enhanced Backdrop
+                        </span>
+                        {selectedImageChoice === 'enhanced' && (
+                          <span className="bg-forest-800 text-white text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+                            <Check className="w-3 h-3" /> Selected
+                          </span>
+                        )}
+                      </div>
+                      <div className="w-full h-48 rounded-xl overflow-hidden bg-stone-50 border border-stone-200 flex items-center justify-center p-2">
+                        <img
+                          src={enhancedImageUrl}
+                          alt="Enhanced studio background"
+                          className="w-full h-full object-contain rounded-lg"
+                        />
+                      </div>
+                      <p className="text-[11px] text-stone-500 mt-2">
+                        Neutral warm studio lighting with zero artificial blur on craft edges.
                       </p>
                     </div>
                   </div>
@@ -791,16 +789,16 @@ export const AddProductModal: React.FC<AddProductModalProps> = ({
                     <div className="mt-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-stone-500">
                       <span className="flex items-center gap-1.5 text-stone-600">
                         <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                        Authentic product preserved at full resolution.
+                        Authentic photograph preserved at full quality.
                       </span>
                       <button
                         type="button"
-                        onClick={() => handleRetryEnhancement('pure_white')}
+                        onClick={() => handleRetryEnhancement(backdropStyle)}
                         disabled={enhancementLoading}
-                        className="px-3 py-1 bg-forest-50 hover:bg-forest-100 text-forest-800 border border-forest-200 rounded-lg font-semibold flex items-center gap-1 text-xs shrink-0 cursor-pointer"
+                        className="px-3 py-1 bg-stone-100 hover:bg-stone-200 text-charcoal-800 rounded-lg font-medium flex items-center gap-1 text-xs shrink-0"
                       >
-                        <Wand2 className="w-3 h-3 text-emerald-600" />
-                        {enhancementLoading ? 'Processing…' : 'Change Background to Pure White'}
+                        <Wand2 className="w-3 h-3 text-terracotta-600" />
+                        {enhancementLoading ? 'Processing…' : 'Enhance Background'}
                       </button>
                     </div>
                   </div>

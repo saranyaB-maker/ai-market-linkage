@@ -1,17 +1,22 @@
 import os
 import uuid
 import logging
-import numpy as np
 import requests
-from PIL import Image, ImageFilter
+from PIL import Image
 from config import Config
 
 logger = logging.getLogger("market_linkage")
 
-def enhance_product_image(input_image_path: str, output_folder: str = None, backdrop_style: str = "pure_white") -> dict:
+def enhance_product_image(input_image_path: str, output_folder: str = None, backdrop_style: str = "warm_studio") -> dict:
     """
-    Enhances an artisan product photo by placing it onto a clean pure white background (#FFFFFF).
-    Leaves the craft product 100% untouched - preserves authentic shape, textures, colors, and edges.
+    Enhances an artisan product photo by separating the foreground craft
+    and placing it onto a professional e-commerce studio background (solid warm-white or pure white).
+    Preserves 100% of authentic craft details, shape, colors, handles, and textures.
+    
+    If REMOVE_BG_API_KEY is configured, uses Remove.bg genuine segmentation.
+    If the image already has an alpha transparency channel (transparent PNG/WEBP), composites cleanly.
+    If no genuine background-removal service is configured, does NOT introduce artificial blur;
+    it preserves the original photo at full resolution without blur artifacts.
     """
     if not output_folder:
         output_folder = Config.PRODUCT_UPLOAD_FOLDER
@@ -27,7 +32,7 @@ def enhance_product_image(input_image_path: str, output_folder: str = None, back
     output_filename = f"{filename_base}.jpg"
     output_path = os.path.join(output_folder, output_filename)
     
-    # 1. Cloud background removal service (Remove.bg) if configured
+    # 1. Cloud background removal service (Remove.bg)
     remove_bg_key = os.getenv("REMOVE_BG_API_KEY", "")
     if remove_bg_key:
         try:
@@ -39,10 +44,9 @@ def enhance_product_image(input_image_path: str, output_folder: str = None, back
                     "service_used": "remove_bg_cloud_api",
                     "enhanced_filename": output_filename,
                     "enhanced_image_url": f"/api/products/images/{output_filename}",
-                    "enhanced_url": f"/api/products/images/{output_filename}",
-                    "backdrop_style": "pure_white",
-                    "craft_fidelity": "Product left 100% authentic on pure white studio background",
-                    "disclaimer": "Studio pure white background applied via Remove.bg."
+                    "backdrop_style": backdrop_style,
+                    "craft_fidelity": "Authentic product contours, handles, and textures preserved without blur",
+                    "disclaimer": "Processed via Remove.bg with clean solid studio backdrop."
                 }
         except Exception as e:
             logger.warning(f"Cloud background removal API failed: {e}")
@@ -51,154 +55,42 @@ def enhance_product_image(input_image_path: str, output_folder: str = None, back
     try:
         with Image.open(input_image_path) as img:
             if img.mode in ("RGBA", "LA") or (img.mode == "P" and "transparency" in img.info):
-                rgba = img.convert("RGBA")
-                alpha = rgba.split()[3]
+                alpha = img.convert("RGBA").split()[3]
+                # Check if there are actual transparent pixels (alpha < 250)
                 extrema = alpha.getextrema()
-                if extrema[0] < 220:
-                    # Clean solid composite onto pure white
-                    white_composite = Image.new("RGB", img.size, (255, 255, 255))
-                    white_composite.paste(rgba, mask=alpha)
-                    white_composite.save(output_path, "JPEG", quality=95)
+                if extrema[0] < 200:
+                    # Clean solid composite with zero blur
+                    bg_color = (250, 248, 245) if backdrop_style == "warm_studio" else (255, 255, 255)
+                    composite = Image.new("RGB", img.size, bg_color)
+                    composite.paste(img.convert("RGBA"), mask=alpha)
+                    composite.save(output_path, "JPEG", quality=95)
                     return {
                         "success": True,
                         "service_available": True,
-                        "service_used": "alpha_channel_pure_white_composite",
+                        "service_used": "alpha_channel_clean_composite",
                         "enhanced_filename": output_filename,
                         "enhanced_image_url": f"/api/products/images/{output_filename}",
-                        "enhanced_url": f"/api/products/images/{output_filename}",
-                        "backdrop_style": "pure_white",
-                        "craft_fidelity": "Product details untouched with pure white e-commerce background",
-                        "disclaimer": "Placed cleanly onto pure white background."
+                        "backdrop_style": backdrop_style,
+                        "craft_fidelity": "Clean foreground composite with authentic edges",
+                        "disclaimer": "Foreground placed cleanly onto solid studio backdrop without blur."
                     }
     except Exception as e:
         logger.warning(f"Could not inspect native image alpha: {e}")
 
-    # 3. Built-in Studio White Backdrop Processor (Guaranteed No Product Distortion)
-    try:
-        success = _process_pure_white_backdrop(input_image_path, output_path)
-        if success and os.path.exists(output_path):
-            return {
-                "success": True,
-                "service_available": True,
-                "service_used": "studio_pure_white_processor",
-                "enhanced_filename": output_filename,
-                "enhanced_image_url": f"/api/products/images/{output_filename}",
-                "enhanced_url": f"/api/products/images/{output_filename}",
-                "backdrop_style": "pure_white",
-                "craft_fidelity": "Product left 100% authentic with pure white e-commerce background",
-                "disclaimer": "Background converted to pure white (#FFFFFF). Authentic product left intact."
-            }
-    except Exception as e:
-        logger.warning(f"Studio pure white processor failed: {e}")
-
+    # 3. No genuine background removal service is configured:
+    # Strictly avoid artificial blur, cloudy patches, or smeared edges!
+    # Preserve original photo at full resolution without blur artifacts.
     return {
         "success": False,
         "service_available": False,
         "enhanced_filename": None,
         "enhanced_image_url": None,
-        "message": "Could not automatically isolate background. Original photo preserved without alteration."
+        "message": "Background removal service is not configured (REMOVE_BG_API_KEY not set). Original photograph is preserved at 100% full resolution without artificial blur artifacts."
     }
 
-def _process_pure_white_backdrop(input_path: str, output_path: str) -> bool:
-    """
-    Intelligently identifies outer background borders and replaces them with pure white (#FFFFFF),
-    leaving the center craft product 100% authentic without modifying its pixels or colors.
-    """
-    try:
-        from skimage import color, morphology, filters
-        
-        orig_img = Image.open(input_path).convert("RGB")
-        width, height = orig_img.size
-        
-        # Scale for fast, smooth mask computation
-        max_dim = 1000
-        scale = min(1.0, max_dim / max(width, height))
-        if scale < 1.0:
-            proc_size = (int(width * scale), int(height * scale))
-            proc_img = orig_img.resize(proc_size, Image.Resampling.BILINEAR)
-        else:
-            proc_img = orig_img
-            
-        arr = np.array(proc_img)
-        lab = color.rgb2lab(arr)
-        
-        # Sample borders (outer 8% margin of frame where background exists)
-        h_m = max(4, int(arr.shape[0] * 0.08))
-        w_m = max(4, int(arr.shape[1] * 0.08))
-        
-        border_pixels = np.vstack([
-            lab[:h_m, :].reshape(-1, 3),
-            lab[-h_m:, :].reshape(-1, 3),
-            lab[:, :w_m].reshape(-1, 3),
-            lab[:, -w_m:].reshape(-1, 3),
-        ])
-        
-        bg_color = np.median(border_pixels, axis=0)
-        diff = np.sqrt(np.sum((lab - bg_color) ** 2, axis=2))
-        
-        border_diffs = np.hstack([
-            diff[:h_m, :].ravel(),
-            diff[-h_m:, :].ravel(),
-            diff[:, :w_m].ravel(),
-            diff[:, -w_m:].ravel(),
-        ])
-        
-        # Threshold: anything with significant color/contrast difference from the border is foreground
-        bg_thresh = max(10.0, np.percentile(border_diffs, 85) + 8.0)
-        fg_mask = diff > bg_thresh
-        
-        # Clean mask: remove isolated noise specks and fill interior product regions
-        try:
-            fg_mask = morphology.remove_small_objects(fg_mask, max_size=300)
-            fg_mask = morphology.remove_small_holes(fg_mask, max_size=1500)
-        except Exception:
-            pass
-            
-        # Guarantee center product area is preserved (artisan products are centered)
-        cy1, cy2 = int(arr.shape[0] * 0.28), int(arr.shape[0] * 0.72)
-        cx1, cx2 = int(arr.shape[1] * 0.28), int(arr.shape[1] * 0.72)
-        center_boost = np.zeros_like(fg_mask, dtype=bool)
-        center_boost[cy1:cy2, cx1:cx2] = True
-        # Keep any product details in the center even if neutral tone
-        fg_mask = fg_mask | (center_boost & (diff > (bg_thresh * 0.5)))
-        
-        # Feather mask edges with gaussian smoothing to avoid jagged borders
-        smooth_mask = filters.gaussian(fg_mask.astype(float), sigma=2.0)
-        
-        # Scale mask back to original resolution
-        if scale < 1.0:
-            mask_img = Image.fromarray((smooth_mask * 255).astype(np.uint8)).resize((width, height), Image.Resampling.BILINEAR)
-            final_alpha = np.array(mask_img, dtype=float) / 255.0
-        else:
-            final_alpha = smooth_mask
-            
-        final_alpha = np.clip(final_alpha, 0.0, 1.0)[:, :, np.newaxis]
-        
-        # Composite foreground product onto PURE WHITE (255, 255, 255)
-        orig_arr = np.array(orig_img, dtype=float)
-        white_bg = np.ones_like(orig_arr) * 255.0
-        
-        composite = (orig_arr * final_alpha + white_bg * (1.0 - final_alpha)).astype(np.uint8)
-        
-        result_img = Image.fromarray(composite)
-        result_img.save(output_path, "JPEG", quality=95)
-        return True
-    except Exception as e:
-        logger.warning(f"Error in pure white backdrop processor: {e}")
-        # Fallback using PIL edge/contrast feathering if skimage fails
-        try:
-            img = Image.open(input_path).convert("RGB")
-            # Create a clean white canvas
-            white_canvas = Image.new("RGB", img.size, (255, 255, 255))
-            white_canvas.paste(img, (0, 0))
-            white_canvas.save(output_path, "JPEG", quality=95)
-            return True
-        except Exception:
-            return False
-
-def _call_remove_bg_api(input_path: str, api_key: str, output_path: str, backdrop_style: str = "pure_white") -> dict:
+def _call_remove_bg_api(input_path: str, api_key: str, output_path: str, backdrop_style: str = "warm_studio") -> dict:
     url = "https://api.remove.bg/v1.0/removebg"
-    bg_color = "FFFFFF"  # Always pure white
+    bg_color = "FAF8F5" if backdrop_style == "warm_studio" else "FFFFFF"
     with open(input_path, "rb") as img_file:
         response = requests.post(
             url,
