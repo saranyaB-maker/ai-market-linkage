@@ -63,9 +63,9 @@ export const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#E8E2D5] shadow-xs">
+    <header className="sticky top-0 z-40 bg-[#F6F0E5]/95 backdrop-blur-md border-b border-[#E5DAC8] shadow-xs">
       {/* Top micro-bar: Demo Accounts & User Session */}
-      <div className="bg-[#F0ECE1] px-4 py-1.5 border-b border-[#E2DBD0] text-xs text-charcoal-700">
+      <div className="bg-[#EFE7D8] px-4 py-1.5 border-b border-[#E0D5BE] text-xs text-charcoal-700">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <span className="font-semibold text-forest-900 flex items-center gap-1">

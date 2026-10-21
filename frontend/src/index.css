@@ -23,8 +23,8 @@
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-color: #FAF8F5;
-    color: #2B302D;
+    background-color: #F6F0E5;
+    color: #1E2621;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -33,6 +33,7 @@
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    background-color: #F6F0E5;
   }
 
   h1, h2, h3 {
@@ -45,17 +46,46 @@
   .font-display {
     font-family: 'Playfair Display', Georgia, serif;
   }
+
+  /* Subtle warm craft motifs & organic gradients */
+  .bg-warm-canvas {
+    background-color: #F6F0E5;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(196, 119, 69, 0.05) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(49, 92, 69, 0.06) 0%, transparent 45%);
+  }
+
+  .bg-hero-texture {
+    background-color: #244131;
+    background-image: 
+      radial-gradient(ellipse at 80% 20%, rgba(196, 119, 69, 0.25) 0%, transparent 60%),
+      radial-gradient(ellipse at 20% 80%, rgba(49, 92, 69, 0.4) 0%, transparent 70%);
+  }
+
+  .bg-subtle-woven {
+    background-color: #FAF6ED;
+    background-image: radial-gradient(rgba(196, 119, 69, 0.12) 0.75px, transparent 0.75px);
+    background-size: 16px 16px;
+  }
+
+  .shadow-craft {
+    box-shadow: 0 4px 20px -2px rgba(30, 38, 33, 0.05), 0 2px 6px -1px rgba(30, 38, 33, 0.03);
+  }
+
+  .shadow-craft-lg {
+    box-shadow: 0 10px 30px -4px rgba(30, 38, 33, 0.08), 0 4px 10px -2px rgba(30, 38, 33, 0.04);
+  }
 }
 
 /* Custom scrollbars */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-track { background: #F3EFE3; }
-::-webkit-scrollbar-thumb { background: #DFD5BC; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: #C85A32; }
+::-webkit-scrollbar-track { background: #EFE7D8; }
+::-webkit-scrollbar-thumb { background: #D5C8B0; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #C47745; }
 
 /* Craft card */
 .craft-card {
-  @apply bg-white rounded-2xl border border-[#EAE5D9] shadow-sm hover:shadow-md transition-all duration-200;
+  @apply bg-white rounded-2xl border border-[#E5DAC8] shadow-craft hover:shadow-craft-lg transition-all duration-300;
 }
 
 /* Verification badges */
@@ -66,8 +96,8 @@
   @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200;
 }
 .badge-reseller {
-  @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200;
+  @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-stone-100 text-stone-700 border border-stone-200;
 }
 .badge-unverified {
-  @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-stone-100 text-stone-600 border border-stone-200;
+  @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200;
 }

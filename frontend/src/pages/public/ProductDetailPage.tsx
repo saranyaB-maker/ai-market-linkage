@@ -379,7 +379,7 @@ export const ProductDetailPage: React.FC = () => {
           </div>
 
           {/* Technical Specs Table */}
-          <div className="grid grid-cols-2 gap-3 text-xs bg-white p-4 rounded-2xl border border-stone-200">
+          <div className="grid grid-cols-2 gap-3 text-xs bg-white p-4 rounded-2xl border border-[#E5DAC8] shadow-craft">
             <div>
               <span className="text-stone-400 block text-[11px]">{t('materialsLabel')}</span>
               <strong className="text-charcoal-800 font-semibold">{product.materials || (language === 'ta' ? 'இயற்கை மூலப்பொருட்கள்' : 'Natural materials')}</strong>
@@ -414,7 +414,7 @@ export const ProductDetailPage: React.FC = () => {
           </div>
 
           {/* Seller Profile Card */}
-          <div className="p-4 rounded-2xl bg-white border border-stone-200 space-y-3">
+          <div className="p-4 rounded-2xl bg-white border border-[#E5DAC8] shadow-craft space-y-3">
             <div className="flex items-center justify-between">
               <div>
                 <span className="text-[10px] text-stone-400 block uppercase tracking-wider">{t('manufacturerSeller')}</span>
@@ -433,7 +433,7 @@ export const ProductDetailPage: React.FC = () => {
             </div>
 
             {product.seller?.workshop_details && (
-              <p className="text-xs text-stone-500 italic bg-[#FAF8F5] p-2 rounded-xl border border-stone-200">
+              <p className="text-xs text-stone-500 italic bg-[#FAF6ED] p-2.5 rounded-xl border border-[#E8DFC8]">
                 &ldquo;{product.seller.workshop_details}&rdquo;
               </p>
             )}

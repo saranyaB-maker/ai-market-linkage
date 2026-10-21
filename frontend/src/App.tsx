@@ -91,7 +91,7 @@ const ProtectedRoute: React.FC<{
 
 // ── Layouts ───────────────────────────────────────────────────────────────
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#FAF8F5' }}>
+  <div className="min-h-screen flex flex-col bg-warm-canvas text-charcoal-900">
     <Navbar />
     <main className="flex-1">{children}</main>
     <Footer />
@@ -99,7 +99,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 );
 
 const DashboardLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="min-h-screen flex flex-col bg-gray-50">
+  <div className="min-h-screen flex flex-col bg-[#F6F1E8] text-charcoal-900">
     <Navbar />
     <main className="flex-1">{children}</main>
   </div>

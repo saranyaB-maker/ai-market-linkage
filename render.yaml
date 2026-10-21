@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: ai-market-linkage-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    healthCheckPath: /api/health
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: MONGO_URI
+        sync: false
+      - key: DB_NAME
+        value: ai_market_linkage
+      - key: ALLOW_DEMO_SEED
+        value: "true"
+      - key: PYTHON_VERSION
+        value: 3.11.9

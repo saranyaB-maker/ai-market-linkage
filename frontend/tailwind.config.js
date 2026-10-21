@@ -8,70 +8,83 @@ export default {
     extend: {
       colors: {
         // ── Flat aliases used throughout components ──────────────────────
-        'forest-green': '#1D452B',   // primary brand
-        'terracotta':   '#C85A32',   // accent
-        'gold':         '#D4AF37',   // muted gold
-        'cream':        '#FAF8F5',   // background
-        'charcoal':     '#2B302D',   // primary text
+        'forest-green': '#315C45',   // primary brand (#315C45)
+        'terracotta':   '#C47745',   // accent (#C47745)
+        'gold':         '#C89B3C',   // warm heritage gold
+        'cream':        '#F6F0E5',   // warm cream background (#F6F0E5)
+        'charcoal':     '#1E2621',   // primary readable dark text
 
         // ── Full palettes for shade variants ─────────────────────────────
         forest: {
-          50:  '#F0F6F2',
-          100: '#E0EDE4',
-          200: '#C0DBC8',
-          300: '#95C2A2',
-          400: '#64A477',
-          500: '#3D8654',
-          600: '#2D6B42',
-          700: '#235434',
-          800: '#1D452B', // Primary brand
-          900: '#173723',
-          950: '#0C2013',
+          50:  '#F2F6F3',
+          100: '#E1ECE5',
+          200: '#C5DBCF',
+          300: '#9EBFAD',
+          400: '#6E9D83',
+          500: '#477B5E',
+          600: '#315C45', // Signature Forest Green (#315C45)
+          700: '#274B38',
+          800: '#1F3C2C', // Deep forest
+          900: '#172E22',
+          950: '#0C1A13',
         },
         terracotta: {
-          50:  '#FDF6F3',
-          100: '#FAECE5',
-          200: '#F5D7CA',
-          300: '#EDBBA7',
-          400: '#E19576',
-          500: '#D5734E',
-          600: '#C85A32', // Accent
-          700: '#A74524',
-          800: '#893B22',
-          900: '#713421',
+          50:  '#FAF4EE',
+          100: '#F5E6DC',
+          200: '#EBCDB9',
+          300: '#DFAe91',
+          400: '#D28E63',
+          500: '#C47745', // Signature Terracotta (#C47745)
+          600: '#B06132',
+          700: '#924B23',
+          800: '#753A1B',
+          900: '#5F2F16',
+        },
+        sage: {
+          50:  '#F4F7F4',
+          100: '#E5EDE6',
+          200: '#CDDCCD',
+          300: '#ACC4AD',
+          400: '#89A88B',
+          500: '#698B6C',
+          600: '#516E54',
+          700: '#3F5541',
+          800: '#304132',
+          900: '#243226',
         },
         gold: {
           50:  '#FDFBF4',
-          100: '#FAF4E4',
-          200: '#F4E7BF',
-          300: '#ECD593',
-          400: '#E3C167',
-          500: '#D4AF37', // Muted gold
-          600: '#B89225',
-          700: '#936E1D',
-          800: '#77571E',
-          900: '#65481E',
+          100: '#FAF3E0',
+          200: '#F4E5BD',
+          300: '#EBD194',
+          400: '#DEB967',
+          500: '#C89B3C', // Warm heritage gold
+          600: '#AA7F2C',
+          700: '#886221',
+          800: '#6C4D1D',
+          900: '#563D1B',
         },
         cream: {
-          50:  '#FCFBF8',
-          100: '#F9F7F1',
-          200: '#F3EFE3',
-          300: '#EBE4D1',
-          400: '#DFD5BC',
-          DEFAULT: '#FAF8F5',
+          50:  '#FCFAF6',
+          100: '#FAF6EE',
+          200: '#F6F0E5', // Signature Warm Cream (#F6F0E5)
+          300: '#ECE2D0',
+          400: '#DFD2BA',
+          500: '#CEBD9F',
+          DEFAULT: '#F6F0E5',
         },
         charcoal: {
-          50:  '#F6F6F6',
-          100: '#E7E7E7',
-          200: '#D1D1D1',
-          300: '#B0B0B0',
-          400: '#888888',
-          500: '#6D6D6D',
-          600: '#5D5D5D',
-          700: '#4F4F4F',
-          800: '#2B302D',
-          900: '#1F2421', // Primary text
-          DEFAULT: '#2B302D',
+          50:  '#F6F7F6',
+          100: '#E9EBEA',
+          200: '#D4D8D5',
+          300: '#B2B9B4',
+          400: '#88918A',
+          500: '#646E67',
+          600: '#4D5650',
+          700: '#38403A',
+          800: '#272E29',
+          900: '#1E2621', // Primary readable text
+          DEFAULT: '#1E2621',
         },
       },
       fontFamily: {

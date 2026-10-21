@@ -218,7 +218,7 @@ export const SellerDashboard: React.FC = () => {
             ? 'bg-rose-50/80 border-rose-200'
             : verificationApp?.verification_status === 'draft'
             ? 'bg-blue-50/80 border-blue-200'
-            : 'bg-[#FAF8F5] border-[#E8E2D5]'
+            : 'bg-[#FAF6ED] border-[#E5DAC8]'
         }`}>
           <div className="flex items-start gap-4">
             <div className={`w-11 h-11 rounded-xl flex items-center justify-center shrink-0 mt-0.5 ${

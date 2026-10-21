@@ -116,16 +116,16 @@ export const MarketplacePage: React.FC = () => {
       {/* Main Grid: Filters Sidebar + Product Catalog */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Filters Sidebar */}
-        <aside className="lg:col-span-1 space-y-6 bg-white p-6 rounded-2xl border border-stone-200 h-fit shadow-xs">
-          <div className="flex items-center justify-between pb-3 border-b border-stone-200">
+        <aside className="lg:col-span-1 space-y-6 bg-white p-6 rounded-2xl border border-[#E5DAC8] h-fit shadow-craft">
+          <div className="flex items-center justify-between pb-3 border-b border-[#EFE7D8]">
             <span className="font-bold text-xs uppercase tracking-wider text-charcoal-900 flex items-center gap-1.5">
-              <SlidersHorizontal className="w-4 h-4 text-forest-700" />
+              <SlidersHorizontal className="w-4 h-4 text-forest-600" />
               {t('filterCatalog')}
             </span>
             <button
               type="button"
               onClick={clearAllFilters}
-              className="text-[11px] text-terracotta-700 hover:underline font-semibold"
+              className="text-[11px] text-terracotta-600 hover:text-terracotta-700 hover:underline font-semibold"
             >
               {t('resetAll')}
             </button>
@@ -238,7 +238,7 @@ export const MarketplacePage: React.FC = () => {
         {/* Products Grid & Sorting */}
         <main className="lg:col-span-3 space-y-6">
           {/* Top Sort & Count Bar */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white px-4 py-3 rounded-2xl border border-stone-200 shadow-2xs">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white px-5 py-3.5 rounded-2xl border border-[#E5DAC8] shadow-craft">
             <span className="text-xs text-charcoal-700 font-medium">
               {t('showing')} <strong className="text-forest-900 font-bold">{products.length}</strong> {t('of')}{' '}
               <strong className="text-forest-900 font-bold">{totalCount}</strong> {t('craftListings')}
@@ -249,7 +249,7 @@ export const MarketplacePage: React.FC = () => {
               <select
                 value={sortBy}
                 onChange={(e) => updateParam('sort_by', e.target.value)}
-                className="px-3 py-1.5 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-forest-600 focus:outline-none bg-white font-medium"
+                className="px-3 py-1.5 text-xs rounded-xl border border-[#E5DAC8] focus:ring-2 focus:ring-forest-600 focus:outline-none bg-[#FCFAF6] font-medium text-charcoal-900"
               >
                 <option value="newest">{t('sortNewest')}</option>
                 <option value="price_asc">{t('sortPriceAsc')}</option>
@@ -262,11 +262,15 @@ export const MarketplacePage: React.FC = () => {
           {loading ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
               {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="h-84 rounded-2xl bg-stone-100 animate-pulse" />
+                <div key={i} className="h-88 rounded-2xl bg-white border border-[#E5DAC8] animate-pulse p-4 space-y-3">
+                  <div className="h-48 bg-[#EFE7D8] rounded-xl" />
+                  <div className="h-4 bg-[#EFE7D8] rounded w-3/4" />
+                  <div className="h-3 bg-[#EFE7D8] rounded w-1/2" />
+                </div>
               ))}
             </div>
           ) : products.length === 0 ? (
-            <div className="text-center py-16 bg-white rounded-3xl border border-stone-200 p-8">
+            <div className="text-center py-16 bg-white rounded-3xl border border-[#E5DAC8] p-8 shadow-craft">
               <Package className="w-12 h-12 text-stone-300 mx-auto mb-3" />
               <h3 className="font-serif text-lg font-bold text-charcoal-900">
                 No matching craft listings found
@@ -277,7 +281,7 @@ export const MarketplacePage: React.FC = () => {
               <button
                 type="button"
                 onClick={clearAllFilters}
-                className="px-4 py-2 rounded-xl bg-forest-800 text-white text-xs font-semibold"
+                className="px-5 py-2.5 rounded-xl bg-forest-800 hover:bg-forest-900 text-white text-xs font-semibold shadow-sm transition-all"
               >
                 Reset All Filters
               </button>
@@ -288,11 +292,11 @@ export const MarketplacePage: React.FC = () => {
                 <Link
                   key={p.id}
                   to={`/products/${p.id}`}
-                  className="group bg-white rounded-2xl border border-stone-200 overflow-hidden hover:shadow-lg transition-all flex flex-col justify-between"
+                  className="group bg-white rounded-2xl border border-[#E5DAC8] overflow-hidden shadow-craft hover:shadow-craft-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-left"
                 >
                   <div>
                     {/* Image */}
-                    <div className="h-48 bg-stone-100 overflow-hidden relative">
+                    <div className="h-52 bg-[#FAF6ED] overflow-hidden relative border-b border-[#EFE7D8]">
                       <ProductImage
                         src={p.images?.[0]}
                         alt={p.title}
@@ -306,7 +310,7 @@ export const MarketplacePage: React.FC = () => {
                     {/* Content */}
                     <div className="p-4 space-y-2">
                       <div className="flex items-center justify-between text-[10px] text-stone-500 font-medium">
-                        <span className="uppercase tracking-wider">{p.category}</span>
+                        <span className="uppercase tracking-wider font-bold text-terracotta-700">{p.category}</span>
                         {p.seller?.state && (
                           <span className="flex items-center gap-1 text-stone-400">
                             <MapPin className="w-3 h-3" />
@@ -324,7 +328,7 @@ export const MarketplacePage: React.FC = () => {
                       </p>
 
                       <div className="pt-2 flex flex-wrap items-center gap-1.5 text-[11px] text-stone-600">
-                        <span className="bg-stone-50 px-2 py-0.5 rounded border border-stone-200">
+                        <span className="bg-[#FAF4EE] text-terracotta-800 px-2 py-0.5 rounded border border-[#EBCDB9] font-medium">
                           Stock: <strong>{p.stock_quantity} {p.unit || 'piece'}s</strong>
                         </span>
                         <span className="bg-stone-50 px-2 py-0.5 rounded border border-stone-200">
@@ -335,7 +339,7 @@ export const MarketplacePage: React.FC = () => {
                   </div>
 
                   {/* Pricing footer */}
-                  <div className="p-4 pt-3 border-t border-stone-100 bg-[#FCFBF9] flex items-center justify-between">
+                  <div className="p-4 pt-3 border-t border-[#EFE7D8] bg-[#FCFAF6] flex items-center justify-between">
                     <div>
                       <span className="text-[10px] text-stone-500 block">Unit Price (₹)</span>
                       <span className="font-bold text-base text-forest-950 font-mono">
